@@ -3,12 +3,17 @@
   width: 50%;
   position: relative;
 
-  .img_container {
+  .img_container.img_container_dark {
     border: 2px solid green;
     position: absolute;
     bottom: 0em;
     left: 30%;
     height: 20em;
     padding: 0 4em;
+    background-color: red;
+  }
+
+  .img_container_dark {
+    background-color: red;
   }
 }
