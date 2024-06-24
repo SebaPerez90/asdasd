@@ -21,7 +21,7 @@
     }
 
     .activeLink {
-      color: red;
+      color: red !important;
       text-decoration: none;
     }
   }

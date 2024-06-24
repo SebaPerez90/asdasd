@@ -5,32 +5,38 @@ import styles from './NavBar.module.css';
 import Profile from '../Profile/Profile';
 import { usePathname, useRouter } from 'next/navigation';
 import { useThemeStore } from '@/context/theme-store';
+import { useLanguageStore } from '@/context/language-store';
 
 const navLinks = [
   {
     path: '/talents',
-    name: 'Talents',
+    name_en: 'Talents',
+    name_es: 'Talentos',
     label: 'navlink-talent',
   },
   {
     path: '/jobs',
-    name: 'Jobs',
+    name_en: 'Jobs',
+    name_es: 'Trabajos',
     label: 'navlink-jobs',
   },
   {
     path: '/about',
-    name: 'About',
+    name_en: 'About',
+    name_es: 'Acerca',
     label: 'navlink-about',
   },
   {
     path: '/contact',
-    name: 'Contact',
+    name_en: 'Contact',
+    name_es: 'Contacto',
     label: 'navlink-contact',
   },
 ];
 
 const NavBar = () => {
   const { theme } = useThemeStore();
+  const { language } = useLanguageStore();
   const pathname = usePathname();
   const router = useRouter();
 
@@ -57,7 +63,7 @@ const NavBar = () => {
             }
             aria-label={element.label}
             href={element.path}>
-            {element.name}
+            {language === 'english' ? element.name_en : element.name_es}
           </Link>
         ))}
       </nav>
