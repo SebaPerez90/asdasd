@@ -4,6 +4,7 @@ import Link from 'next/link';
 import styles from './NavBar.module.css';
 import Profile from '../Profile/Profile';
 import { usePathname, useRouter } from 'next/navigation';
+import { useThemeStore } from '@/context/theme-store';
 
 const navLinks = [
   {
@@ -29,11 +30,18 @@ const navLinks = [
 ];
 
 const NavBar = () => {
+  const { theme } = useThemeStore();
   const pathname = usePathname();
   const router = useRouter();
 
   return (
-    <header className={styles.header}>
+    <header
+      style={
+        theme === 'dark'
+          ? { backgroundColor: '#f4f4f4' }
+          : { backgroundColor: '#252525', color: '#f4f4f4' }
+      }
+      className={styles.header}>
       <span
         className={styles.logo}
         onClick={() => router.push('/')}>
@@ -43,6 +51,7 @@ const NavBar = () => {
         {navLinks.map((element, index) => (
           <Link
             key={index}
+            style={theme === 'dark' ? undefined : { color: '#f4f4f4' }}
             className={
               pathname === element.path ? styles.activeLink : styles.links
             }
