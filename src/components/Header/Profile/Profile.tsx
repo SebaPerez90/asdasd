@@ -1,11 +1,11 @@
-'use client';
-
 import { useLanguageStore } from '@/context/language-store';
 import { useThemeStore } from '@/context/theme-store';
-// import Register from '@/components/Forms/Register/Register';
+import { BsFillSunFill } from 'react-icons/bs';
+import { FaMoon } from 'react-icons/fa';
+import { BiWorld } from 'react-icons/bi';
 import { FaUser } from 'react-icons/fa';
-import type { MenuProps } from 'antd';
 import { Dropdown } from 'antd';
+import type { MenuProps } from 'antd';
 
 const Profile = () => {
   const { toggleLanguage, language } = useLanguageStore();
@@ -13,11 +13,20 @@ const Profile = () => {
 
   const items: MenuProps['items'] = [
     {
-      label: <button onClick={toggleTheme}>toggle theme</button>,
+      label: (
+        <button onClick={toggleTheme}>
+          {theme === 'dark' ? <FaMoon /> : <BsFillSunFill />}
+        </button>
+      ),
       key: '1',
     },
     {
-      label: <button onClick={toggleLanguage}>toggle language</button>,
+      label: (
+        <button onClick={toggleLanguage}>
+          <BiWorld />
+          {language === 'english' ? 'en' : 'es'}
+        </button>
+      ),
 
       key: '2',
     },
