@@ -1,0 +1,41 @@
+.settings_menu {
+  position: absolute;
+  right: 3em;
+  display: flex;
+  gap: 1em;
+
+  .theme_btn {
+    border: none;
+    background-color: transparent;
+    position: relative;
+
+    .theme_options_hide {
+      position: absolute;
+      display: flex;
+      scale: 0;
+      overflow: hidden;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      left: -3em;
+      top: 1.5em;
+      border: 1px solid #0002;
+      transition: 100ms;
+      color: black;
+    }
+
+    .theme_options_visible {
+      scale: 1;
+      transition: 100ms;
+      z-index: 1;
+      background: white;
+    }
+  }
+  .language_btn {
+    display: flex;
+    align-items: center;
+    gap: 0.1em;
+  }
+}
