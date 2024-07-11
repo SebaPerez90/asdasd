@@ -2,10 +2,12 @@
 
 import Link from 'next/link';
 import styles from './NavBar.module.css';
-import Profile from '../Profile/Profile';
+import Settings from '../Settings/Settings';
 import { usePathname, useRouter } from 'next/navigation';
 import { useThemeStore } from '@/context/theme-store';
 import { useLanguageStore } from '@/context/language-store';
+import Image from 'next/image';
+import logo from '@/assets/svg/logo.svg';
 
 const navLinks = [
   {
@@ -48,11 +50,17 @@ const NavBar = () => {
           : { backgroundColor: '#252525', color: '#f4f4f4' }
       }
       className={styles.header}>
-      <span
-        className={styles.logo}
+      <div
+        className={styles.logo_container}
         onClick={() => router.push('/')}>
-        LOGO
-      </span>
+        <Image
+          src={logo}
+          alt='logo'
+          width={80}
+          height={80}
+          className={styles.logo_image}
+        />
+      </div>
       <nav className={styles.navbar}>
         {navLinks.map((element, index) => (
           <Link
@@ -67,9 +75,7 @@ const NavBar = () => {
           </Link>
         ))}
       </nav>
-      <div className={styles.menu}>
-        <Profile />
-      </div>
+      <Settings />
     </header>
   );
 };
