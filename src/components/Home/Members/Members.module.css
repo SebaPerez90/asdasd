@@ -21,11 +21,18 @@
   }
 
   .swiper_container {
-    width: 70%;
+    width: 40em;
     margin-bottom: 2em;
-    padding: 1.4em 0 1em 1.4em;
+    padding: 1.5em 1.2em;
     border-radius: 6px;
     border: 1px solid #8080802d;
     background-color: var(--bg-light);
+    display: flex;
+    flex-direction: row;
+
+    .swiper_card {
+      width: 90%;
+      padding: 0 0.2em;
+    }
   }
 }

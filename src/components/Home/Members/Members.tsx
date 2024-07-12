@@ -21,6 +21,7 @@ const Members = () => {
       <Swiper
         modules={[Autoplay, Navigation]}
         slidesPerView={1}
+        spaceBetween={15}
         autoplay={{ delay: 5000, pauseOnMouseEnter: true }}
         className={styles.swiper_container}>
         <SwiperSlide className={styles.swiper_card}>
