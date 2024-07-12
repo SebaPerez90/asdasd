@@ -1,7 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
-  --bg-red: blue;
+  /* Dark Theme base */
+  --bg-dark: #1b1b1f;
+  --color-primary-dark: #fffff5db;
+  --color-secondary-dark: #ebebf599;
+  --box-dark: #202127;
+  --btn-dark: #32363f;
+  --btn-dark-hover: #414853;
+  --btn-color-dark: #fffff5db;
+
+  /* Light Theme base */
+  --bg-light: #fff;
+  --color-primary-light: #3c3c43;
+  --color-secondary-light: #3c3c43c7;
+  --box-light: #f6f6f7;
+  --btn-light: #ebebef;
+  --btn-light-hover: #e4e4e9;
+  --btn-color-light: #3c3c43;
 }
 
 html,
@@ -14,6 +30,36 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
+
+  .loader-container {
+    background-color: var(--bg-dark);
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .info-message {
+      font-size: 1.4em;
+      color: var(--color-primary-dark);
+    }
+  }
+
+  .notfound-container {
+    background-color: var(--bg-dark);
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2,
+    p {
+      color: var(--color-primary-dark);
+    }
+  }
 }
 
 * {
