@@ -1,3 +1,5 @@
+/* @import '../../../app/globals.css'; */
+
 .settings_menu {
   position: absolute;
   right: 3em;
@@ -23,14 +25,14 @@
       top: 1.5em;
       border: 1px solid #0002;
       transition: 100ms;
-      color: black;
+      color: var(--color-primary-light);
     }
 
     .theme_options_visible {
       scale: 1;
       transition: 100ms;
       z-index: 1;
-      background: white;
+      background-color: var(--box-light);
     }
   }
   .language_btn {
