@@ -1,8 +1,8 @@
+import styles from './Settings.module.css';
 import { useLanguageStore } from '@/context/language-store';
 import { useThemeStore } from '@/context/theme-store';
 import { BsFillSunFill } from 'react-icons/bs';
 import { FaMoon } from 'react-icons/fa';
-import styles from './Settings.module.css';
 import { LiaLanguageSolid } from 'react-icons/lia';
 import { useRef } from 'react';
 
@@ -11,7 +11,6 @@ const Settings = () => {
   const { toggleTheme, theme } = useThemeStore();
 
   const themeOptions = useRef<HTMLDivElement | null>(null);
-
   const openThemeOptions = () => {
     themeOptions.current?.classList.toggle(styles.theme_options_visible);
   };
@@ -19,21 +18,21 @@ const Settings = () => {
   return (
     <div className={styles.settings_menu}>
       <div
-        style={theme === 'dark' ? { color: '#000' } : { color: '#fff' }}
         className={styles.theme_btn}
         onClick={openThemeOptions}>
         {theme === 'dark' ? <FaMoon /> : <BsFillSunFill />}
         <div
+          style={
+            theme === 'light'
+              ? { backgroundColor: '#1b1b1f', color: '#fffff5db' }
+              : undefined
+          }
           ref={themeOptions}
           className={styles.theme_options_hide}>
-          <span
-            // style={theme === 'dark' ? { color: '#f00' } : { color: 'blue' }}
-            onClick={theme === 'dark' ? toggleTheme : undefined}>
+          <span onClick={theme === 'dark' ? toggleTheme : undefined}>
             {language === 'english' ? 'dark' : 'oscuro'}
           </span>
-          <span
-            // style={theme === 'dark' ? { color: '#f00' } : { color: 'blue' }}
-            onClick={theme === 'dark' ? undefined : toggleTheme}>
+          <span onClick={theme === 'dark' ? undefined : toggleTheme}>
             {language === 'english' ? 'light' : 'claro'}
           </span>
         </div>

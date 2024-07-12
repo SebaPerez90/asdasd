@@ -1,13 +1,47 @@
-.landing {
+.landing_container {
   height: 80dvh;
   display: flex;
 
-  .about_app {
-    background-color: rgba(0, 0, 255, 0.08);
+  .landing_description {
+    background-color: var(--box-light);
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 5em;
+
+    .title {
+      font-size: 3em;
+      color: var(--color-primary-light);
+    }
+    .paragraph {
+      color: var(--color-secondary-light);
+    }
+  }
+
+  .buttons_container {
+    display: flex;
+    gap: 1em;
+
+    .posts_btn,
+    .talents_btn {
+      border: none;
+      background: var(--btn-light);
+      padding: 1em;
+      border: 1px solid #80808042;
+      border-radius: 5px;
+      font-weight: 700;
+      color: var(--color-secondary-light);
+
+      &:hover {
+        background-color: var(--btn-ligh-hover);
+        color: var(--color-primary-light);
+        cursor: pointer;
+        transition: 200ms;
+      }
+      &:active {
+        scale: 0.9;
+      }
+    }
   }
 }
