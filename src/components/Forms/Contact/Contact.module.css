@@ -2,11 +2,13 @@
   border: #000d3848 1px solid;
   display: flex;
   background-color: #90c2ff;
+  padding: 2em;
+  align-items: center;
 }
 
 .container_text{
-  width: 70%;
-  height: 400px;
+  width: 7em;
+  height: 40em;
   background-color: #0034de;
   display: flex;
   align-items: center;
