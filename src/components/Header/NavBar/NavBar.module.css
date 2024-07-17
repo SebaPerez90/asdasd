@@ -8,21 +8,26 @@
   position: relative;
   background-color: var(--bg-light);
   font-weight: 600;
+}
+.navbar {
+  display: flex;
+  gap: 2em;
+}
 
-  .navbar {
-    display: flex;
-    gap: 2em;
+.links {
+  text-decoration: none;
+  color: var(--color-secondary-light);
+}
 
-    .links {
-      text-decoration: none;
-      color: var(--color-secondary-light);
-    }
+.activeLink {
+  color: red !important;
+  text-decoration: none;
+}
 
-    .activeLink {
-      color: red !important;
-      text-decoration: none;
-    }
-  }
+.logo_container {
+  position: absolute;
+  left: 2em;
+  cursor: pointer;
 }
 
 /* Dark Theme */
@@ -37,23 +42,8 @@
   color: var(--color-primary-dark);
   font-weight: 600;
 
-  .navbar_dark {
-    display: flex;
-    gap: 2em;
-
-    .links {
-      text-decoration: none;
-      color: var(--color-primary-dark);
-    }
-
-    .activeLink {
-      color: red !important;
-      text-decoration: none;
-    }
+  .links {
+    text-decoration: none;
+    color: var(--color-primary-dark);
   }
-}
-
-.logo_container {
-  position: absolute;
-  left: 2em;
 }

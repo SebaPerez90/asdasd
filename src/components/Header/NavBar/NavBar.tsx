@@ -52,7 +52,7 @@ const NavBar = () => {
         onClick={() => router.push('/')}>
         LOGO
       </div>
-      <nav className={theme === 'dark' ? styles.navbar : styles.navbar_dark}>
+      <nav className={styles.navbar}>
         {navLinks.map((element, index) => (
           <Link
             key={index}
