@@ -8,12 +8,37 @@
   gap: 1.5em;
   z-index: 100;
 }
+
 .theme_btns_container {
   border: none;
   background-color: transparent;
   position: relative;
   display: flex;
   align-items: center;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -1em;
+    left: -1em;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: var(--border-light);
+    z-index: -1;
+    opacity: 0;
+    transition: 200ms;
+  }
+
+  &:hover::after {
+    opacity: 0.6;
+    transition: 200ms;
+  }
+
+  &:active {
+    scale: 0.9;
+  }
 }
 
 .theme_options_hide {
@@ -89,6 +114,11 @@
   align-items: center;
   gap: 1.5em;
 
+  .theme_btns_container {
+    &::after {
+      background-color: var(--border-dark);
+    }
+  }
   .btn {
     &:hover {
       background-color: var(--border-dark);
