@@ -5,7 +5,8 @@
   --bg-dark: #1b1b1f;
   --color-primary-dark: #fffff5db;
   --color-secondary-dark: #ebebf599;
-  --box-dark: #202127;
+  --box-dark: #33353f;
+  --border-dark: #474a58;
   --btn-dark: #32363f;
   --btn-dark-hover: #414853;
   --btn-color-dark: #fffff5db;
@@ -15,6 +16,7 @@
   --color-primary-light: #3c3c43;
   --color-secondary-light: #3c3c43c7;
   --box-light: #f6f6f7;
+  --border-light: #ccc;
   --btn-light: #ebebef;
   --btn-light-hover: #e4e4e9;
   --btn-color-light: #3c3c43;
