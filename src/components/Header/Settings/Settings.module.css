@@ -12,6 +12,8 @@
     border: none;
     background-color: transparent;
     position: relative;
+    display: flex;
+    align-items: center;
 
     .theme_options_hide {
       display: flex;
@@ -75,6 +77,8 @@
     border: none;
     background-color: transparent;
     position: relative;
+    display: flex;
+    align-items: center;
 
     .theme_options_hide {
       display: flex;
