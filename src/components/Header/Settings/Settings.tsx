@@ -29,7 +29,7 @@ const Settings = () => {
       <div
         className={styles.theme_btns_container}
         onClick={openThemeOptions}>
-        {theme === 'dark' ? <FaMoon /> : <BsFillSunFill />}
+        {theme === 'dark' ? <BsFillSunFill /> : <FaMoon />}
         <div
           ref={themeOptions}
           className={styles.theme_options_hide}>
