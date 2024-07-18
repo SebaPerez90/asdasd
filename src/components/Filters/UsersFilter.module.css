@@ -95,12 +95,12 @@
     .profession_subtitle {
       font-weight: 700;
     }
-
-    .label_container {
-      display: flex;
-      align-items: center;
-      gap: 0.3em;
-      color: var(--color-tertiary-light);
-    }
   }
+}
+
+.labels_container {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  color: var(--color-tertiary-light);
 }

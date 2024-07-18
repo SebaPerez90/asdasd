@@ -60,9 +60,10 @@ const UsersFilter = () => {
         </p>
         {professions.map((element, index) => (
           <label
-            className={styles.label_container}
+            className={styles.labels_container}
             key={index}>
             <input
+              id={String(index)}
               key={index}
               type='checkbox'
               value={element.professionEn}
