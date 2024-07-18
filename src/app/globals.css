@@ -15,11 +15,16 @@
   --bg-light: #fff;
   --color-primary-light: #3c3c43;
   --color-secondary-light: #3c3c43c7;
-  --box-light: #f2f2f2;
+  --color-tertiary-light: #777e87;
+  --box-light: #ededed;
   --border-light: #ccc;
   --btn-light: #ebebef;
   --btn-light-hover: #ceced3;
   --btn-color-light: #3c3c43;
+
+  --purple-strong: #756ab6;
+  --purple-medium: #ac87c5;
+  --purple-weak: #e0aed0;
 }
 
 html,
