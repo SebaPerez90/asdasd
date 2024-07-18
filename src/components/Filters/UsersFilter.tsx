@@ -29,7 +29,7 @@ const UsersFilter = () => {
             onChange={(e) => setRating(e.target.value)}
             className={styles.range_input}
           />
-          <span className={styles.rate}>
+          <p className={styles.rate}>
             {rating}
             <FaStar
               style={{
@@ -40,7 +40,7 @@ const UsersFilter = () => {
                 filter: 'drop-shadow(0px 0px 1px #000000af)',
               }}
             />
-          </span>
+          </p>
         </div>
       </div>
 
