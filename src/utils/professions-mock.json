@@ -1,0 +1,78 @@
+[
+  {
+    "professionEs": "albañil",
+    "professionEn": "construction worker"
+  },
+  {
+    "professionEs": "plomero",
+    "professionEn": "plumber"
+  },
+  {
+    "professionEs": "personal trainer",
+    "professionEn": "personal trainer"
+  },
+  {
+    "professionEs": "gasista",
+    "professionEn": "gas fitter"
+  },
+  {
+    "professionEs": "electricista",
+    "professionEn": "electrician"
+  },
+  {
+    "professionEs": "mecanico",
+    "professionEn": "mechanic"
+  },
+  {
+    "professionEs": "carpintero",
+    "professionEn": "carpenter"
+  },
+  {
+    "professionEs": "techista",
+    "professionEn": "roofer"
+  },
+  {
+    "professionEs": "fletero",
+    "professionEn": "freight handler"
+  },
+  {
+    "professionEs": "técnico pc",
+    "professionEn": "PC technician"
+  },
+  {
+    "professionEs": "técnico celulares",
+    "professionEn": "phone technician"
+  },
+  {
+    "professionEs": "jardinero",
+    "professionEn": "gardener"
+  },
+  {
+    "professionEs": "herrero",
+    "professionEn": "blacksmith"
+  },
+  {
+    "professionEs": "cadete",
+    "professionEn": "courier"
+  },
+  {
+    "professionEs": "profesora particular",
+    "professionEn": "private tutor"
+  },
+  {
+    "professionEs": "profesor ingles",
+    "professionEn": "English teacher"
+  },
+  {
+    "professionEs": "fotografo",
+    "professionEn": "photographer"
+  },
+  {
+    "professionEs": "cocinero",
+    "professionEn": "cook"
+  },
+  {
+    "professionEs": "mozo",
+    "professionEn": "waiter"
+  }
+]

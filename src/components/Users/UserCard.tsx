@@ -28,6 +28,7 @@ const UserCard = () => {
                     color: '#EEF200',
                     fontSize: '1.4em',
                     transform: 'translateY(-0.1em)',
+                    filter: 'drop-shadow(1px 1px 1px #000000af)',
                   }}
                 />
                 {user.profesionalRate}
