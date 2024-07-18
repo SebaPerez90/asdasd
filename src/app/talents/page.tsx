@@ -1,11 +1,12 @@
 import UserCard from '@/components/Users/UserCard';
-import './talents.css';
+// import './talents.css';
 import UsersFilter from '@/components/Filters/UsersFilter';
-// import UserList from '@/components/Users/UserList/UserList';
+import styles from './talents.module.css'
+
 
 const Talents = () => {
   return (
-    <div className='main_container'>
+    <div className={styles.main_container}>
       <UsersFilter />
       <UserCard />
     </div>
