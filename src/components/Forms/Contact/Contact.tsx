@@ -5,8 +5,10 @@ export default function Contact() {
   return (
     <div className={styles.container_todo}>
       <div className={styles.container_text}></div>
-      <div className={styles.container}>
-        <div className={styles.heading}>Contact us</div>
+      <div className={styles.container_form}>
+        <div className={styles.heading}>
+          <h1>Contact us</h1>
+        </div>
         <form
           className={styles.form}
           action=''>

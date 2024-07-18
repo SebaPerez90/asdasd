@@ -2,52 +2,41 @@
   border: #000d3848 1px solid;
   display: flex;
   background-color: #90c2ff;
-  padding: 2em;
+  padding: 2;
   align-items: center;
+  font-family: 'Inter', sans-serif
 }
 
 .container_text{
-  width: 7em;
-  height: 40em;
-  background-color: #0034de;
+  width: 75em;
+  height: 30em;
+  background-color: var(--bg-dark);
   display: flex;
   align-items: center;
   justify-content: center;
   border: #0000 1px solid;
 }
 
-.container {
-    width: 30%;
-    height: 100%;
-    border: solid 1px #8d8d8d;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: #fff;
+.container_form {
+    width: 40em;
+    border: solid 1px #756e6e;
+    padding: 1.3em;
+    border-radius: 17px;
+    background-color: var(--box-light);
+    margin: 0em 2em 0em 2em;
   }
-  
-  .container .heading {
-    height: 100%; 
+
+  .container_form .heading h1{
+    margin-top: 0px;
     text-align: center;
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-    font-weight: bolder;
   }
   
   .form {
-    max-width: 100%;
+    max-width: 50em;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2em;
   }
-  
-  .form .btn_container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-
   
   .input_field {
     position: relative;
@@ -55,7 +44,7 @@
   
   .input_field label {
     position: absolute;
-    color: #8d8d8d;
+    color: var(--color-secondary-light);
     pointer-events: none;
     background-color: transparent;
     left: 15px;
@@ -65,28 +54,54 @@
   }
   
   .input_field input {
-    width: 95%;
-    padding: 10px 15px;
+    width: 37em;
+    max-width: 100%;
+    padding: 13px 15px;
     font-size: 1rem;
     border-radius: 8px;
-    border: solid 1px #8d8d8d;
+    border: solid 1px #635c5c;
     letter-spacing: 1px;
+    background-color: var(--box-light);
   }
   
   .input_field input:focus,
   .input_field input:valid {
     outline: none;
-    border: solid 1px #0034de;
+    border: solid 1px #D72323;
   }
   
   .input_field input:focus ~ label,
   .input_field input:valid ~ label {
     transform: translateY(-51%) translateX(-10px) scale(0.8);
-    background-color: #fff;
+    background-color:var(--box-light);
     padding: 0px 5px;
-    color: #0034de;
+    color: #D72323;
     font-weight: bold;
     letter-spacing: 1px;
     border: none;
     border-radius: 100px;
   }
+  .btn_container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn{
+    font-family: 'Inter', sans-serif;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: color .25s, border-color .25s, background-color .25s, box-shadow .25s;
+    border-radius: 15px;
+    padding: 0 20px;
+    line-height: 38px;
+    font-size: 14px;
+    border-color: #635c5c;
+    color:  #635c5c;
+    background-color:var(--box-light);
+}
+
+.btn:hover{
+  color: #D72323;
+  border-color: #D72323;
+  box-shadow: #d7232338 0px 0px 0px 1.5px;
+}
