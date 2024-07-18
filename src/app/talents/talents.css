@@ -4,11 +4,4 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-
-  .filter_container {
-    background: #363636dc;
-    color: white;
-    height: 32em;
-    width: 25em;
-  }
 }

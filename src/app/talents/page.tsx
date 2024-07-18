@@ -1,11 +1,11 @@
-import UserCard from '@/components/Users/UserCard';
 import './talents.css';
-// import UserList from '@/components/Users/UserList/UserList';
+import UserCard from '@/components/Users/UserCard';
+import UsersFilter from '@/components/Filters/UsersFilter';
 
 const Talents = () => {
   return (
     <div className='main_container'>
-      <div className='filter_container'></div>
+      <UsersFilter />
       <UserCard />
     </div>
   );
