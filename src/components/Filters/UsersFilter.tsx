@@ -33,9 +33,6 @@ const UsersFilter = () => {
             <span>{rating}</span>
             <FaStar
               style={{
-                // fontSize: '1.3em',
-                // // position: 'relative',
-                // // top: '-0.05em',
                 color: '#FAFF00',
                 filter: 'drop-shadow(0px 0px 1px #00000093)',
               }}
