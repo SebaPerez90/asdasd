@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Juan",
+    "lastname": "Pérez",
+    "city": "Buenos Aires",
+    "profesionalRate": "4.5",
+    "newMember": true,
+    "profesions": ["albañil", "plomero"],
+    "country": "Argentina",
+    "userImage": null,
+    "genre":"male"
+  },
+  {
+    "name": "Ana",
+    "lastname": "Gómez",
+    "city": "Córdoba",
+    "profesionalRate": "4.7",
+    "newMember": false,
+    "profesions": ["personal trainer", "gasista"],
+    "country": "Argentina",
+    "userImage": null,
+    "genre":"female"
+  },
+  {
+    "name": "Miguel",
+    "lastname": "Rodríguez",
+    "city": "Rosario",
+    "profesionalRate": "4.6",
+    "newMember": true,
+    "profesions": ["electricista", "mecanico"],
+    "country": "Argentina",
+    "userImage": null,
+    "genre":"male"
+  },
+  {
+    "name": "Emilia",
+    "lastname": "Martínez",
+    "city": "Mendoza",
+    "profesionalRate": "4.8",
+    "newMember": false,
+    "profesions": ["mecanico", "carpintero"],
+    "country": "Argentina",
+    "userImage": null,
+    "genre":"female"
+  },
+  {
+    "name": "David",
+    "lastname": "Fernández",
+    "city": "La Plata",
+    "profesionalRate": "4.4",
+    "newMember": true,
+    "profesions": ["techista", "fletero"],
+    "country": "Argentina",
+    "userImage": null,
+    "genre":"male"
+  },
+  {
+    "name": "Sara",
+    "lastname": "López",
+    "city": "Mar del Plata",
+    "profesionalRate": "4.9",
+    "newMember": false,
+    "profesions": ["técnico pc", "técnico celulares"],
+    "country": "Argentina",
+    "userImage": null,
+    "genre":"female"
+  },
+  {
+    "name": "Roberto",
+    "lastname": "Mendoza",
+    "city": "Salta",
+    "profesionalRate": "4.3",
+    "newMember": true,
+    "profesions": ["jardinero", "herrero"],
+    "country": "Venezuela",
+    "userImage": null,
+    "genre":"male"
+  },
+  {
+    "name": "Jessica",
+    "lastname": "García",
+    "city": "San Miguel de Tucumán",
+    "profesionalRate": "4.7",
+    "newMember": false,
+    "profesions": ["cadete", "profesora particular"],
+    "country": "Colombia",
+    "userImage": null,
+    "genre":"female"
+  },
+  {
+    "name": "William",
+    "lastname": "Rodríguez",
+    "city": "Santa Fe",
+    "profesionalRate": "4.5",
+    "newMember": true,
+    "profesions": ["profesor ingles", "fotografo"],
+    "country": "Argentina",
+    "userImage": null,
+    "genre":"male"
+  },
+  {
+    "name": "Linda",
+    "lastname": "Hernández",
+    "city": "San Juan",
+    "profesionalRate": "4.8",
+    "newMember": false,
+    "profesions": ["cocinero", "mozo"],
+    "country": "Bolivia",
+    "userImage": null,
+    "genre":"female"
+  }
+]

@@ -1,29 +1,49 @@
 .container_todo{
   border: #000d3848 1px solid;
   display: flex;
-  background-color: #90c2ff;
-  padding: 2;
+  flex-wrap: wrap;
+  background-color: var(--bg-light);
+  padding: 2em;
   align-items: center;
+  justify-content: space-around;
   font-family: 'Inter', sans-serif
 }
 
 .container_text{
-  width: 75em;
+  width: 30em;
   height: 30em;
-  background-color: var(--bg-dark);
+  flex-direction: column;
+  background-color: var(--box-light);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: #0000 1px solid;
+  border: var(--border-light) 1px solid;
+}
+
+@media (min-width : 1680px) {
+  .container_text{
+    width: 60em;
+  }
+
+  .container_form{
+    width: 30em;
+
+    .form{
+      width: 30em;
+    }
+  }
 }
 
 .container_form {
-    width: 40em;
-    border: solid 1px #756e6e;
-    padding: 1.3em;
+    border: solid 1px var(--border-light);
+    padding: 2em 3em 2em 2.5em;
     border-radius: 17px;
     background-color: var(--box-light);
     margin: 0em 2em 0em 2em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
   }
 
   .container_form .heading h1{
@@ -32,7 +52,8 @@
   }
   
   .form {
-    max-width: 50em;
+    width: 20em;
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -40,6 +61,7 @@
   
   .input_field {
     position: relative;
+    width: 100%;
   }
   
   .input_field label {
@@ -54,9 +76,18 @@
   }
   
   .input_field input {
-    width: 37em;
-    max-width: 100%;
-    padding: 13px 15px;
+    width: 100%;
+    padding: 13px 0px 13px 13px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: solid 1px #635c5c;
+    letter-spacing: 1px;
+    background-color: var(--box-light);
+  }
+  
+  .input_field textarea {
+    width: 100%;
+    padding: 13px 0px 13px 13px;
     font-size: 1rem;
     border-radius: 8px;
     border: solid 1px #635c5c;
@@ -65,12 +96,16 @@
   }
   
   .input_field input:focus,
+  .input_field textarea:focus,
+  .input_field textarea:valid,
   .input_field input:valid {
     outline: none;
     border: solid 1px #D72323;
   }
   
   .input_field input:focus ~ label,
+  .input_field textarea:focus ~ label,
+  .input_field textarea:valid ~ label,
   .input_field input:valid ~ label {
     transform: translateY(-51%) translateX(-10px) scale(0.8);
     background-color:var(--box-light);

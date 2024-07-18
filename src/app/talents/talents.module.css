@@ -1,0 +1,7 @@
+.main_container {
+  height: auto;
+  background-color: var(--bg-light);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
