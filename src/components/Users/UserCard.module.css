@@ -2,10 +2,11 @@
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, 250px);
   background: var(--box-light);
   gap: 1.5em;
   padding: 3em 4em;
+  justify-content: center;
 }
 
 .user_card {
@@ -21,6 +22,7 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
+
 
   &::after {
     content: '';
@@ -70,7 +72,7 @@
     border-radius: 50%;
     position: absolute;
     top: 3em;
-    left: 5em;
+    left: 25%;
   }
 
   .user_data_container {
