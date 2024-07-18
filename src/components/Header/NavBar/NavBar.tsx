@@ -6,8 +6,6 @@ import Settings from '../Settings/Settings';
 import { usePathname, useRouter } from 'next/navigation';
 import { useThemeStore } from '@/context/theme-store';
 import { useLanguageStore } from '@/context/language-store';
-import Image from 'next/image';
-import logo from '@/assets/svg/logo.svg';
 
 const navLinks = [
   {
@@ -52,15 +50,9 @@ const NavBar = () => {
       <div
         className={styles.logo_container}
         onClick={() => router.push('/')}>
-        <Image
-          src={logo}
-          alt='logo'
-          width={80}
-          height={80}
-          className={styles.logo_image}
-        />
+        LOGO
       </div>
-      <nav className={theme === 'dark' ? styles.navbar : styles.navbar_dark}>
+      <nav className={styles.navbar}>
         {navLinks.map((element, index) => (
           <Link
             key={index}
