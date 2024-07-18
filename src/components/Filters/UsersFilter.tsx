@@ -34,9 +34,10 @@ const UsersFilter = () => {
             <FaStar
               style={{
                 fontSize: '1.3em',
-                transform: 'translateY(-0.1em)',
+                position: 'relative',
+                top: '-0.05em',
                 color: '#FAFF00',
-                filter: 'drop-shadow(1px 1px 1px #000000af)',
+                filter: 'drop-shadow(0px 0px 1px #000000af)',
               }}
             />
           </span>

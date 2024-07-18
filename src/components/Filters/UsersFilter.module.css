@@ -65,10 +65,10 @@
         &::before {
           content: '';
           position: absolute;
-          top: -0.3em;
-          left: -0.2em;
-          width: 6em;
-          height: 3em;
+          top: 0.25em;
+          left: 0em;
+          width: 5em;
+          height: 2em;
           border-radius: 40px;
           z-index: -1;
           background-color: var(--bg-light);
@@ -95,12 +95,12 @@
     .profession_subtitle {
       font-weight: 700;
     }
-  }
-}
 
-.labels_container {
-  display: flex;
-  align-items: center;
-  gap: 0.3em;
-  color: var(--color-tertiary-light);
+    .labels_container {
+      display: flex;
+      align-items: center;
+      gap: 0.3em;
+      color: var(--color-tertiary-light);
+    }
+  }
 }
