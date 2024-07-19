@@ -60,7 +60,7 @@
   &::before {
     content: '';
     position: absolute;
-    top: 0.45em;
+    top: 0.3em;
     left: 0em;
     width: 5em;
     height: 1.6em;
@@ -73,8 +73,8 @@
 
 .btn {
   border-radius: 50%;
-  height: 3em;
-  width: 3em;
+  height: 2.3em;
+  width: 2.3em;
   background: var(--purple-weak);
   border: none;
   cursor: pointer;
