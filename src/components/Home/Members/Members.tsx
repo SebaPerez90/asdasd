@@ -10,23 +10,26 @@ import pic from '@/assets/images/pic.jpg';
 import pic2 from '@/assets/images/pic2.jpg';
 import pic3 from '@/assets/images/pic3.jpg';
 import pic4 from '@/assets/images/pic4.jpg';
+import pic5 from '@/assets/images/pic5.jpg';
+import pic6 from '@/assets/images/pic6.jpg';
 import { useEffect, useState } from 'react';
 
 const Members = () => {
   const [currentImg, setCurrentImg] = useState(pic);
 
   useEffect(() => {
-    const number = Math.round(Math.random() * 4);
-    switch (number) {
-      case 1:
-        return setCurrentImg(pic);
-      case 2:
-        return setCurrentImg(pic2);
-      case 3:
-        return setCurrentImg(pic3);
-      case 4:
-        return setCurrentImg(pic4);
-    }
+    const images = [pic, pic2, pic3, pic4, pic5, pic6];
+
+    const changeImage = () => {
+      const number = Math.floor(Math.random() * images.length);
+      setCurrentImg(images[number]);
+    };
+
+    const interval = setInterval(changeImage, 6000);
+
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   return (
