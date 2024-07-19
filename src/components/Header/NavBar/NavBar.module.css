@@ -4,6 +4,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  align-items: center;
   padding: 1.8em 0em;
   position: relative;
   background-color: var(--bg-light);
@@ -28,6 +29,14 @@
   position: absolute;
   left: 2em;
   cursor: pointer;
+  color: var(--color-tertiary-light);
+  font-size: 1.2em;
+}
+
+.logo_container strong {
+  color: var(--purple-medium);
+  font-weight: 900;
+  font-size: 1.2em;
 }
 
 /* Dark Theme */

@@ -7,6 +7,7 @@
   flex-direction: column;
   justify-content: flex-end;
   z-index: 1;
+  height: 32em;
 
   &::after {
     content: '';
@@ -27,10 +28,7 @@
 }
 
 .img_container {
-  /* position: absolute; */
-  /* top: -2em; */
-  /* left: 20%; */
-  height: 32em;
+  height: 100%;
 }
 
 .img {
@@ -43,8 +41,8 @@
 
 .swiper_container {
   position: absolute;
-  width: 40em;
-  left: 4em;
+  width: 30em;
+  left: 3em;
   margin-bottom: 2em;
   background-color: #ffffff75;
   padding: 0.7em;
@@ -54,8 +52,13 @@
 }
 
 .swiper_card {
-  width: 100%;
   font-weight: 700;
   color: var(--color-primary-light);
   line-height: 1.7em;
+}
+
+@media (width > 1200px) {
+  .members {
+    height: 40em;
+  }
 }
