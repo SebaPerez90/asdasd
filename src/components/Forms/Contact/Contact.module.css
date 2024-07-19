@@ -74,6 +74,7 @@
 }
 
 .input_field input {
+  box-sizing: border-box;
   width: 100%;
   padding: 13px 0px 13px 13px;
   font-size: 1rem;
@@ -84,6 +85,7 @@
 }
 
 .input_field textarea {
+  box-sizing: border-box;
   width: 100%;
   padding: 13px 0px 13px 13px;
   font-size: 1rem;
@@ -163,3 +165,55 @@
     }
   }
 
+  @media(max-width: 880px) {
+    .container_todo{
+      gap: 2em;
+    }
+    .container_text{
+      width: 60em;
+    }
+    .container_form{
+      width: 30em;
+  
+      .form{
+        width: 30em;
+      }
+    }
+    .btn{
+      width: 15em;
+    }
+  }
+
+  @media(max-width: 410px) {
+    .container_text{
+      width: 30em;
+    }
+    .container_form{
+      width: 20em;
+  
+      .form{
+        width: 20em;
+      }
+
+    }
+    .btn{
+      width: 10em;
+    }
+  }
+
+  @media(max-width: 316px) {
+    .container_text{
+      width: 30em;
+      text-align: left;
+    }
+    .container_form{
+      width: 15em;
+      .form{
+        width: 15em;
+      }
+
+    }
+    .btn{
+      width: 10em;
+    }
+  }
