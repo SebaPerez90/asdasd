@@ -35,10 +35,6 @@
     opacity: 0.6;
     transition: 200ms;
   }
-
-  &:active {
-    scale: 0.9;
-  }
 }
 
 .theme_options_hide {

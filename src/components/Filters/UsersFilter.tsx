@@ -29,17 +29,15 @@ const UsersFilter = () => {
             onChange={(e) => setRating(e.target.value)}
             className={styles.range_input}
           />
-          <span className={styles.rate}>
-            {rating}
+          <div className={styles.rate}>
+            <span>{rating}</span>
             <FaStar
               style={{
-                fontSize: '1.3em',
-                transform: 'translateY(-0.1em)',
                 color: '#FAFF00',
-                filter: 'drop-shadow(1px 1px 1px #000000af)',
+                filter: 'drop-shadow(0px 0px 1px #00000093)',
               }}
             />
-          </span>
+          </div>
         </div>
       </div>
 
@@ -60,9 +58,10 @@ const UsersFilter = () => {
         </p>
         {professions.map((element, index) => (
           <label
-            className={styles.label_container}
+            className={styles.labels_container}
             key={index}>
             <input
+              id={String(index)}
               key={index}
               type='checkbox'
               value={element.professionEn}

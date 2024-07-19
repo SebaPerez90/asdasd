@@ -37,6 +37,7 @@ body {
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
+  font-size: calc(7.5px + 0.5vw);
   font-family: 'Inter', sans-serif;
   font-weight: 500;
 
