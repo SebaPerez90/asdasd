@@ -23,9 +23,12 @@ const Landing = () => {
               : 'Con solo unos pocos clicks, conecta con profesionales capacitados que cumplen con tus necesidades.'}
             <br></br>
             <br></br>
-            {language === 'english'
-              ? 'We simplify the process!'
-              : 'Nosotros simplificamos el proceso!'}
+            <strong>
+              {language === 'english'
+                ? 'We simplify the process!'
+                : 'Nosotros simplificamos el proceso!'}{' '}
+              🚀
+            </strong>
           </p>
         </div>
         <div className={styles.buttons_container}>
@@ -33,7 +36,9 @@ const Landing = () => {
             {language === 'english' ? 'Publications' : 'Publicaciones'}
           </button>
           <button className={styles.talents_btn}>
-            {language === 'english' ? 'Find professionals' : 'Busca Profesionales'}
+            {language === 'english'
+              ? 'Find professionals'
+              : 'Busca Profesionales'}
           </button>
         </div>
       </div>
