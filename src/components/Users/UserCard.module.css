@@ -28,7 +28,7 @@
     position: absolute;
     top: -6em;
     left: 0;
-    border-radius: 100px;
+    border-radius: 0 0 0 100px;
     background: var(--purple-weak);
     width: 25em;
     height: 18em;
