@@ -2,13 +2,14 @@
   display: flex;
 }
 .landing_info_container {
-  /* background-color: var(--box-light); */
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 4em 2em;
+  padding-left: 3em;
   height: 32em;
+  /* box-sizing: content-box; */
 }
 
 .landing_text_container {
@@ -16,6 +17,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .title {
   font-size: 2.8em;
   line-height: 1.3em;
@@ -57,21 +59,29 @@
 .posts_btn,
 .talents_btn {
   border: none;
-  background: var(--btn-light);
+  background: var(--purple-medium);
   padding: 1.2em;
   border: 1px solid #80808042;
   border-radius: 5px;
   font-weight: 700;
   font-size: 0.85em;
-  color: var(--color-secondary-light);
+  color: var(--color-primary-dark);
 
   &:hover {
-    background-color: var(--btn-ligh-hover);
-    color: var(--color-primary-light);
+    background-color: var(--purple-strong);
+    color: var(--color-secondary-dark);
     cursor: pointer;
     transition: 200ms;
   }
   &:active {
     scale: 0.9;
+  }
+}
+
+/* Responsive */
+
+@media (width > 1200px) {
+  .title {
+    font-size: 3.6em;
   }
 }
