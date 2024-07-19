@@ -7,18 +7,19 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import Image from 'next/image';
 import logo from '@/assets/svg/logo.svg';
+import pic from '@/assets/images/mujer-joven-concentrada-que-trabaja-cafe-favorito-filmacion-interiores-encantadora-estudiante-seria-usando-laptop_197531-17205.jpg';
 
 const Members = () => {
   return (
     <div className={styles.members}>
       <div className={styles.img_container}>
         <Image
-          src={logo}
+          src={pic}
           alt='logo'
           className={styles.img}
         />
       </div>
-      <Swiper
+      {/* <Swiper
         modules={[Autoplay, Navigation]}
         slidesPerView={1}
         spaceBetween={15}
@@ -36,7 +37,7 @@ const Members = () => {
           Regístrate en solo unos pasos y encuentra la solución perfecta para
           tus necesidades del hogar.
         </SwiperSlide>
-      </Swiper>
+      </Swiper> */}
     </div>
   );
 };
