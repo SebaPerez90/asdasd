@@ -6,8 +6,10 @@ export default function Contact() {
     <div className={styles.container_todo}>
       <div className={styles.container_text}>
         <h1>If you have any questions or suggestions?</h1>
-        <span>If you have any questions or suggestions, do not hesitate to contact us.
-        We will evaluate it and carry it out</span>
+        <span>
+          If you have any questions or suggestions, do not hesitate to contact
+          us. We will evaluate it and carry it out
+        </span>
       </div>
       <div className={styles.container_form}>
         <div className={styles.heading}>
