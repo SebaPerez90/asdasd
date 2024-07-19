@@ -1,20 +1,45 @@
+'use client';
+
 import Members from '../Members/Members';
 import styles from './Landing.module.css';
+import { useLanguageStore } from '@/context/language-store';
 
 const Landing = () => {
-  return (
-    <div className={styles.landing_container}>
-      <div className={styles.landing_description}>
-        <h1 className={styles.title}>¡Encontrar ayuda confiable nunca fue tan fácil y seguro!</h1>
+  const { language } = useLanguageStore();
 
-        <p className={styles.paragraph}>
-          ¿Alguna vez necesitaste un albañil para las tareas cotidianas del
-          hogar? Estás en el lugar indicado. Con solo unos pocos clics, conecta
-          con profesionales capacitados que cumplen con tus necesidades.
-        </p>
+  return (
+    <div className={styles.main_container}>
+      <div className={styles.landing_info_container}>
+        <div className={styles.landing_text_container}>
+          <h1 className={styles.title}>
+            {language === 'english'
+              ? 'Finding reliable help has never been easier or safer!'
+              : '¡Encontrar ayuda confiable nunca fue tan fácil y seguro!'}
+          </h1>
+
+          <p className={styles.paragraph}>
+            {language === 'english'
+              ? 'With just a few clicks, connect with skilled professionals who meet your needs.'
+              : 'Con solo unos pocos clicks, conecta con profesionales capacitados que cumplen con tus necesidades.'}
+            <br></br>
+            <br></br>
+            <strong>
+              {language === 'english'
+                ? 'We simplify the process!'
+                : 'Nosotros simplificamos el proceso!'}{' '}
+              🚀
+            </strong>
+          </p>
+        </div>
         <div className={styles.buttons_container}>
-          <button className={styles.posts_btn}>publicaciones</button>
-          <button className={styles.talents_btn}>busca profesionales</button>
+          <button className={styles.posts_btn}>
+            {language === 'english' ? 'Publications' : 'Publicaciones'}
+          </button>
+          <button className={styles.talents_btn}>
+            {language === 'english'
+              ? 'Find professionals'
+              : 'Busca Profesionales'}
+          </button>
         </div>
       </div>
       <Members />
