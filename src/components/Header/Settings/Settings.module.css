@@ -2,28 +2,88 @@
 
 .settings_menu {
   position: absolute;
-  right: 3em;
+  right: 2em;
   display: flex;
   align-items: center;
-  gap: 1.5em;
+  gap: 1em;
   z-index: 100;
+}
+
+.acces_btns_container {
+  display: flex;
+  gap: 0.5em;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: -0.8em;
+    width: 2px;
+    height: 2.6em;
+    opacity: 0.5;
+    background-color: var(--border-light);
+  }
+}
+
+.login_btn {
+  background-color: var(--box-light);
+  padding: 0.8em;
+  border: 1px solid #80808042;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.85em;
+  color: var(--color-primary-light);
+  border: 1px solid var(--border-light);
+
+  &:hover {
+    background-color: var(--bg-light);
+    color: var(--color-tertiary-light);
+    cursor: pointer;
+    transition: 200ms;
+  }
+  &:active {
+    scale: 0.9;
+  }
+}
+
+.signup_btn {
+  background: var(--blue-strong);
+  padding: 0.8em;
+  border: 1px solid #80808042;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.85em;
+  color: var(--color-primary-dark);
+
+  &:hover {
+    background-color: var(--blue-medium);
+    color: var(--color-secondary-dark);
+    cursor: pointer;
+    transition: 200ms;
+  }
+  &:active {
+    scale: 0.9;
+  }
 }
 
 .theme_btns_container {
   border: none;
   background-color: transparent;
   position: relative;
+  left: 0.5em;
   display: flex;
   align-items: center;
   cursor: pointer;
+  color: var(--blue-strong);
+  font-size: 1.3em;
 
   &::after {
     content: '';
     position: absolute;
-    top: -1em;
-    left: -1em;
-    width: 3em;
-    height: 3em;
+    top: -0.55em;
+    left: -0.55em;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;
     background-color: var(--border-light);
     z-index: -1;
@@ -47,9 +107,10 @@
   padding: 0.3em;
   border-radius: 5px;
   transition: 200ms;
+  font-size: 0.8em;
   scale: 0;
   left: -3.5em;
-  top: 2.5em;
+  top: 3em;
 }
 
 .btn {
@@ -71,32 +132,13 @@
   color: var(--color-primary-light);
 }
 
-.language_btn_container {
-  display: flex;
-  align-items: center;
-  gap: 0.2em;
+.language_btn {
+  border: none;
+  cursor: pointer;
+  background: transparent;
 
-  .language_btn {
-    display: flex;
-    align-items: center;
-    border: none;
-    padding: 0.5em;
-    cursor: pointer;
-    border-radius: 3px;
-    font-weight: 700;
-    color: var(--color-primary-dark);
-    background: var(--box-dark);
-    transition: all 200ms;
-
-    &:hover {
-      background-color: var(--btn-dark-hover);
-      transition: all 200ms;
-    }
-
-    &:active {
-      scale: 0.9;
-      outline: 1px solid var(--border-dark);
-    }
+  &:active {
+    scale: 0.9;
   }
 }
 

@@ -3,8 +3,8 @@
 :root {
   /* Dark Theme base */
   --bg-dark: #1b1b1f;
-  --color-primary-dark: #fefef7db;
-  --color-secondary-dark: #ebebf599;
+  --color-primary-dark: #fff;
+  --color-secondary-dark: #ffffffbf;
   --color-tertiary-dark: #ceced999;
   --box-dark: #33353f;
   --border-dark: #474a58;
@@ -25,7 +25,7 @@
   /* --purple-mediasdaum: #1b487c; */
   --blue-strong: #196eed;
   --blue-medium: #47b5ff;
-  --purple-weak: #dff6ff;
+  --blue-weak: #dff6ff;
 }
 
 html,
