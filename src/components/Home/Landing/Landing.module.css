@@ -45,7 +45,7 @@
     width: 22em;
     height: 10px;
     border-radius: 20px;
-    background: linear-gradient(to left, #fff, var(--purple-strong));
+    background: linear-gradient(to left, #fff, var(--blue-strong));
 
     z-index: -1;
   }
@@ -59,17 +59,15 @@
 .posts_btn,
 .talents_btn {
   border: none;
-  background: var(--purple-medium);
+  background: var(--blue-strong);
   padding: 1.2em;
   border: 1px solid #80808042;
   border-radius: 5px;
-  font-weight: 700;
   font-size: 0.85em;
   color: var(--color-primary-dark);
 
   &:hover {
-    background-color: var(--purple-strong);
-    color: var(--color-secondary-dark);
+    background-color: var(--blue-medium);
     cursor: pointer;
     transition: 200ms;
   }
