@@ -84,7 +84,7 @@
     cursor: pointer;
     border-radius: 3px;
     font-weight: 700;
-    color: var(--btn-color-dark);
+    color: var(--color-primary-dark);
     background: var(--box-dark);
     transition: all 200ms;
 
@@ -128,7 +128,7 @@
   }
 
   .language_btn {
-    color: var(--btn-color-light);
+    color: var(--color-primary-light);
     background: var(--btn-light);
 
     &:hover {

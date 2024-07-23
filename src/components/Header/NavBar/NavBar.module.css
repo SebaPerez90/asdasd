@@ -17,24 +17,32 @@
 
 .links {
   text-decoration: none;
-  color: var(--color-secondary-light);
+  color: var(--color-primary-light);
+  border-bottom: 3px solid transparent;
+
+  &:hover {
+    color: var(--blue-medium);
+    transition: all 200ms;
+  }
 }
 
 .activeLink {
-  color: red !important;
+  color: var(--blue-medium);
+  transition: all 1s;
   text-decoration: none;
+  border-bottom: 3px solid var(--blue-medium);
 }
 
 .logo_container {
   position: absolute;
   left: 2em;
   cursor: pointer;
-  color: var(--color-tertiary-light);
+  color: var(--color-primary-light);
   font-size: 1.2em;
 }
 
 .logo_container strong {
-  color: var(--purple-medium);
+  color: var(--blue-medium);
   font-weight: 900;
   font-size: 1.2em;
 }
@@ -45,6 +53,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  align-items: center;
   padding: 1.8em 0em;
   position: relative;
   background-color: var(--bg-dark);
