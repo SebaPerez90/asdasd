@@ -1,7 +1,7 @@
 import styles from './Settings.module.css';
 import { useLanguageStore } from '@/context/language-store';
 import { useThemeStore } from '@/context/theme-store';
-import { BsFillSunFill } from 'react-icons/bs';
+import { MdSunny } from 'react-icons/md';
 import { FaMoon } from 'react-icons/fa';
 import { useRef } from 'react';
 import english_icon from '@/assets/images/english-icon.png';
@@ -26,10 +26,14 @@ const Settings = () => {
       className={
         theme === 'dark' ? styles.settings_menu : styles.settings_menu_dark
       }>
+      <div className={styles.acces_btns_container}>
+        <button className={styles.login_btn}>Login</button>
+        <button className={styles.signup_btn}>Sign up</button>
+      </div>
       <div
         className={styles.theme_btns_container}
         onClick={openThemeOptions}>
-        {theme === 'dark' ? <BsFillSunFill /> : <FaMoon />}
+        {theme === 'dark' ? <MdSunny /> : <FaMoon />}
         <div
           ref={themeOptions}
           className={styles.theme_options_hide}>
@@ -45,19 +49,16 @@ const Settings = () => {
           </span>
         </div>
       </div>
-      <div className={styles.language_btn_container}>
-        <button
-          className={styles.language_btn}
-          onClick={() => toggleLanguage()}>
-          {language === 'english' ? 'Eng' : 'Esp'}
-        </button>
+      <button
+        className={styles.language_btn}
+        onClick={() => toggleLanguage()}>
         <Image
-          width={30}
-          height={30}
+          width={25}
+          height={25}
           src={language === 'english' ? english_icon : spanish_icon}
           alt='current-lang-icon'
         />
-      </div>
+      </button>
     </div>
   );
 };

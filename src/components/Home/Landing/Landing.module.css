@@ -60,14 +60,15 @@
 .talents_btn {
   border: none;
   background: var(--blue-strong);
-  padding: 1.2em;
+  padding: 1em;
   border: 1px solid #80808042;
-  border-radius: 5px;
-  font-size: 0.85em;
+  border-radius: 8px;
   color: var(--color-primary-dark);
+  font-weight: 700;
 
   &:hover {
     background-color: var(--blue-medium);
+    color: var(--color-secondary-dark);
     cursor: pointer;
     transition: 200ms;
   }

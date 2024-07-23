@@ -33,12 +33,12 @@ const Landing = () => {
         </div>
         <div className={styles.buttons_container}>
           <button className={styles.posts_btn}>
-            {language === 'english' ? 'Make a Publication' : 'Haz una publicación '}
+            {language === 'english'
+              ? 'Jobs'
+              : 'Trabajos'}
           </button>
           <button className={styles.talents_btn}>
-            {language === 'english'
-              ? 'Find professionals'
-              : 'Busca Profesionales'}
+            {language === 'english' ? 'Talents' : 'Talentos'}
           </button>
         </div>
       </div>
