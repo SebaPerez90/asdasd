@@ -1,0 +1,114 @@
+[
+  {
+    "messages": [
+      {
+        "sender": "user",
+        "message": "Hola, necesito que pintar mi sala. ¿Cuánto costará?"
+      },
+      {
+        "sender": "employee",
+        "message": "Hola, serán $100."
+      },
+      {
+        "sender": "user",
+        "message": "Perfecto. ¿Puedes venir mañana a las 9 AM?"
+      },
+      {
+        "sender": "employee",
+        "message": "Sí, allí estaré."
+      },
+      {
+        "sender": "user",
+        "message": "Son las 10 AM, ¿dónde estás?"
+      },
+      {
+        "sender": "employee",
+        "message": "Se me olvido, perdón."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "sender": "user",
+        "message": "Necesito un electricista para arreglar las luces de mi cocina."
+      },
+      {
+        "sender": "employee",
+        "message": "Puedo hacerlo por $50."
+      },
+      {
+        "sender": "user",
+        "message": "De acuerdo. ¿Cuándo puedes venir?"
+      },
+      {
+        "sender": "employee",
+        "message": "Mañana a las 3 PM."
+      },
+      {
+        "sender": "user",
+        "message": "Te he estado esperando. ¿Dónde estás?"
+      },
+      {
+        "sender": "user",
+        "message": "Hola son las 4 PM ¿Vas a venir?"
+      },
+      {
+        "sender": "user",
+        "message": "¿Hola? ¿Vas a venir?, sino devolveme la seña que te dí"
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "sender": "user",
+        "message": "Hola, necesito arreglar mi techo. Vi que cobras $150."
+      },
+      {
+        "sender": "employee",
+        "message": "No, cobro $300."
+      },
+      {
+        "sender": "user",
+        "message": "Pero, la publicación dice $150."
+      },
+      {
+        "sender": "employee",
+        "message": "Cobro $300 y $75 de anticipo para ir a ver el problema que tenes."
+      },
+      {
+        "sender": "user",
+        "message": "No. Muchas gracias"
+      },
+      {
+        "sender": "user",
+        "message": "Deberías especificar bien tus tarifas."
+      }
+    ]
+  },
+  {
+    "messages": [
+      {
+        "sender": "user",
+        "message": "Hola, pagué por adelantado para que arregles mi baño, pero no has aparecido."
+      },
+      {
+        "sender": "employee",
+        "message": "Lo siento, tuve un problema. Iré mañana."
+      },
+      {
+        "sender": "user",
+        "message": "Dijiste eso la semana pasada. Devuélveme el dinero."
+      },
+      {
+        "sender": "employee",
+        "message": "No puedo ahora, estoy ocupado. Mañana voy"
+      },
+      {
+        "sender": "user",
+        "message": "Pasó una semana de que dijiste que ibas a venir, Quiero mi dinero"
+      }
+    ]
+  }
+]
