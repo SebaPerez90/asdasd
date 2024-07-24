@@ -37,14 +37,15 @@
   position: absolute;
   left: 2em;
   cursor: pointer;
-  color: var(--color-primary-light);
+  color: var(--blue-strong);
   font-size: 1.2em;
-}
-
-.logo_container strong {
-  color: var(--blue-medium);
   font-weight: 900;
-  font-size: 1.2em;
+  transition: all 200ms;
+
+  &:hover {
+    color: var(--blue-medium);
+    transition: all 200ms;
+  }
 }
 
 /* Dark Theme */
