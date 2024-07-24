@@ -6,15 +6,9 @@ const Services = () => {
   return (
     <section className={styles.services_container}>
       <div className={styles.about_container}>
-        <div>
-          <h1>¿Por qué elegirnos?</h1>
-          <ul>
-            <li>razon 1</li>
-            <li>razon 2</li>
-            <li>razon 3</li>
-            <li>razon 4</li>
-          </ul>
-        </div>
+        <h1>
+          ¿Por qué <strong>elegirnos</strong>?
+        </h1>
         <p className={styles.about_parragraph}>
           Nos diferenciamos de otras plataformas que solo se enfocan en trabajos
           fijos y con mucha burocracia de por medio. Si quieres agrandar tu
