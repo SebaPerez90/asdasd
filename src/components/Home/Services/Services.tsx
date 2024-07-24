@@ -24,11 +24,11 @@ const Services = () => {
           con un plus de seguridad que otros marketplaces no ofrecen.
         </p>
       </div>
-      <div>
+      <div className={styles.experiences_container}>
         <h1 className={styles.experiences_title}>
           ¿Te identificas con alguna de estas malas experiencias?
         </h1>
-        <div className={styles.experiences_container}>
+        <div className={styles.experiences}>
           {chats.map((element, index) => (
             <div
               className={styles.message_container}
