@@ -50,7 +50,7 @@ const NavBar = () => {
       <div
         className={styles.logo_container}
         onClick={() => router.push('/')}>
-        <strong>E</strong>ase <strong>H</strong>ire
+        Ease Hire
       </div>
       <nav className={styles.navbar}>
         {navLinks.map((element, index) => (
