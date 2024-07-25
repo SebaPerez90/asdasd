@@ -20,9 +20,9 @@
   --border-light: #ccc;
   --btn-light: #ebebef;
   --btn-light-hover: #ceced3;
-  /* --btn-color-light: #3c3c43; */
 
-  /* --purple-mediasdaum: #1b487c; */
+  --shadow-neutral: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+
   --blue-strong: #196eed;
   --blue-medium: #47b5ff;
   --blue-weak: #dff6ff;
