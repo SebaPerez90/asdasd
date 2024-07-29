@@ -1,42 +1,75 @@
+'use client';
+
 import styles from './About.module.css';
 import chats from '@/utils/fake-chats-mock.json';
 import { IoSend } from 'react-icons/io5';
+import { useLanguageStore } from '@/context/language-store';
 
 const About = () => {
+  const { language } = useLanguageStore();
+
   return (
-    <section className={styles.services_container}>
+    <section className={styles.main_container}>
       <div className={styles.about_container}>
-        <h1>
-          ¿Por qué <strong>elegirnos</strong>?
-        </h1>
-        <p className={styles.about_parragraph}>
-          Nos diferenciamos de otras plataformas que solo se enfocan en trabajos
-          fijos y con mucha burocracia de por medio. Si quieres agrandar tu
-          casa, agregar un ambiente o tienes un problema con una llave y
-          necesitas un electricista o un plomero, ¿realmente tienes tiempo para
-          tanta burocracia? Nuestra app te conecta con personas que pueden
-          resolver ese problema específico conectándote con un especialista en
-          el tema.
-          <br></br>
-          <br></br>
-          Como prestador de servicios, administras tu tiempo y tarifa por hora
-          según tu disponibilidad. Nosotros nos encargamos de conectar personas
-          con un plus de seguridad que otros marketplaces no ofrecen.
-        </p>
+        <div className={styles.about_text_container}>
+          <h1>
+            {language === 'english' ? '¿Why choose us?' : '¿Por qué elegirnos?'}
+            <strong>
+              {' '}
+              {language === 'english' ? 'choose us' : 'elegirnos'}
+            </strong>
+          </h1>
+          <p className={styles.about_parragraph}>
+            {language === 'english'
+              ? 'We stand out from other platforms that focus solely on fixed jobs and are burdened with bureaucracy. Our app quickly connects you with specialists to address your specific needs'
+              : 'Nos diferenciamos de otras plataformas que solo se enfocan en trabajos fijos y con mucha burocracia de por medio. Nuestra app te conecta rápidamente con especialistas para resolver tus necesidades específicas.'}
+          </p>
+          <ul>
+            <li>
+              {language === 'english' ? (
+                <>
+                  As a <strong>client</strong>, you enjoy a fast and easy-to-use
+                  solution with no additional costs and access to top-rated
+                  professionals.
+                </>
+              ) : (
+                <>
+                  Como <strong>cliente</strong>, disfrutas de una solución
+                  rápida y fácil de usar, sin costos adicionales y con acceso a
+                  los profesionales mejor calificados.
+                </>
+              )}
+            </li>
+            <li>
+              {language === 'english' ? (
+                <>
+                  As a <strong>service provider</strong>, you manage your time
+                  and rates according to your convenience. We provide a secure
+                  and reliable experience for you and your clients.
+                </>
+              ) : (
+                <>
+                  Como <strong>prestador de servicios</strong>, gestionas tu
+                  tiempo y tarifas a tu conveniencia. Proveemos una experiencia
+                  segura y confiable para ti y tus clientes.
+                </>
+              )}
+            </li>
+          </ul>
+        </div>
         <div className={styles.benefits}>
           <div>
-            <h3>pepe</h3>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='icon icon-tabler icon-tabler-hand-click'
               width='44'
               height='44'
               viewBox='0 0 24 24'
-              stroke-width='1.5'
-              stroke='#00abfb'
+              strokeWidth='1.5'
+              stroke='#47b5ff'
               fill='none'
-              stroke-linecap='round'
-              stroke-linejoin='round'>
+              strokeLinecap='round'
+              strokeLinejoin='round'>
               <path
                 stroke='none'
                 d='M0 0h24v24H0z'
@@ -51,20 +84,27 @@ const About = () => {
               <path d='M14 3l1 -1' />
               <path d='M15 6h1' />
             </svg>
+            <h3>
+              {language === 'english' ? 'Fast and Easy' : 'Rápido y fácil'}
+            </h3>
+            <p>
+              {language === 'english'
+                ? 'Request a chat with a professional in just a few minutes with a couple of clicks'
+                : 'Solicita un chat con un profesional en unos minutos con un par de clicks'}
+            </p>
           </div>
           <div>
-            <h3>pepe</h3>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='icon icon-tabler icon-tabler-pig-money'
               width='44'
               height='44'
               viewBox='0 0 24 24'
-              stroke-width='1.5'
-              stroke='#00abfb'
+              strokeWidth='1.5'
+              stroke='#47b5ff'
               fill='none'
-              stroke-linecap='round'
-              stroke-linejoin='round'>
+              strokeLinecap='round'
+              strokeLinejoin='round'>
               <path
                 stroke='none'
                 d='M0 0h24v24H0z'
@@ -74,28 +114,47 @@ const About = () => {
               <path d='M5.173 8.378a3 3 0 1 1 4.656 -1.377' />
               <path d='M16 4v3.803a6.019 6.019 0 0 1 2.658 3.197h1.341a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-1.342c-.336 .95 -.907 1.8 -1.658 2.473v2.027a1.5 1.5 0 0 1 -3 0v-.583a6.04 6.04 0 0 1 -1 .083h-4a6.04 6.04 0 0 1 -1 -.083v.583a1.5 1.5 0 0 1 -3 0v-2l0 -.027a6 6 0 0 1 4 -10.473h2.5l4.5 -3h0z' />
             </svg>
+            <h3>{language === 'english' ? 'Free' : 'Gratis'}</h3>
+            <p>
+              {language === 'english'
+                ? 'Enjoy all the benefits at no cost. Our platform is completely free.'
+                : 'Disfruta de todos los beneficios sin costo. Nuestra plataforma es completamente gratuita.'}
+            </p>
           </div>
           <div>
-            <h3>pepe</h3>
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              className='icon icon-tabler icon-tabler-discount-check'
+              className='icon icon-tabler icon-tabler-mood-check'
               width='44'
               height='44'
               viewBox='0 0 24 24'
-              stroke-width='1.5'
-              stroke='#00abfb'
+              strokeWidth='1.5'
+              stroke='#47b5ff'
               fill='none'
-              stroke-linecap='round'
-              stroke-linejoin='round'>
+              strokeLinecap='round'
+              strokeLinejoin='round'>
               <path
                 stroke='none'
                 d='M0 0h24v24H0z'
                 fill='none'
               />
-              <path d='M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7c.412 .41 .97 .64 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1c0 .58 .23 1.138 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1' />
-              <path d='M9 12l2 2l4 -4' />
+              <path d='M20.925 13.163a8.998 8.998 0 0 0 -8.925 -10.163a9 9 0 0 0 0 18' />
+              <path d='M9 10h.01' />
+              <path d='M15 10h.01' />
+              <path d='M9.5 15c.658 .64 1.56 1 2.5 1s1.842 -.36 2.5 -1' />
+              <path d='M15 19l2 2l4 -4' />
             </svg>
+            <h3>{language === 'english' ? 'Ratings' : 'Valoraciones'}</h3>
+            <p>
+              {language === 'english'
+                ? 'Review ratings and feedback from other clients to make informed decisions when hiring professionals.'
+                : 'Revisa calificaciones y reseñas de otros clientes para tomar la decision al contratar profesionales.'}
+            </p>
+            {/* <h3>Mayor visibilidad</h3>
+            <p>
+              Aumenta tu exposición y alcance conectándote con una amplia red de
+              profesionales y potenciales empleadores.
+            </p> */}
           </div>
         </div>
       </div>
