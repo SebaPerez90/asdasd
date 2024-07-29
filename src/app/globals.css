@@ -21,7 +21,10 @@
   --btn-light: #ebebef;
   --btn-light-hover: #ceced3;
 
+  --shadow-top: 0px -3px 15px 0px rgba(0, 0, 0, 0.3);
   --shadow-neutral: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  --shadow-bottom: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
+  --shadow-blue: 0px 3px 15px 0px rgba(24, 109, 236, 0.3);
 
   --blue-strong: #196eed;
   --blue-medium: #47b5ff;
