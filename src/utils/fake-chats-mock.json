@@ -1,9 +1,11 @@
 [
   {
+    "userName": "Pepe Pintor",
+    "userImage": "/imgs/fake-example2.jpg",
     "messages": [
       {
         "sender": "user",
-        "message": "Hola, necesito que pintar mi sala. ¿Cuánto costará?"
+        "message": "Hola, necesito pintar mi sala. ¿Cuánto costará?"
       },
       {
         "sender": "employee",
@@ -28,6 +30,8 @@
     ]
   },
   {
+    "userName": "Jorge Vega",
+    "userImage": "/imgs/fake-example.jpg",
     "messages": [
       {
         "sender": "user",
@@ -60,6 +64,8 @@
     ]
   },
   {
+    "userName": "El Juansito",
+    "userImage": "/imgs/fake-example4.jpg",
     "messages": [
       {
         "sender": "user",
@@ -88,6 +94,8 @@
     ]
   },
   {
+    "userName": "Dami Rojas",
+    "userImage": "/imgs/fake-example3.jpg",
     "messages": [
       {
         "sender": "user",
