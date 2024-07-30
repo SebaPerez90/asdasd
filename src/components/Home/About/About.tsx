@@ -164,7 +164,13 @@ const About = () => {
       </div>
       <div className={styles.experiences_container}>
         <h1 className={styles.experiences_title}>
-          ¿Te identificas con alguna de estas malas experiencias?
+          {language === 'english'
+            ? 'Do you identify with any of these '
+            : '¿Te identificas con alguna de estas '}
+          <strong>
+            {language === 'english' ? 'bad experiences' : 'malas experiencias'}
+          </strong>
+          ?
         </h1>
         <div className={styles.experiences}>
           {chats.map((element, index) => (
