@@ -3,7 +3,16 @@
 import styles from './About.module.css';
 import chats from '@/utils/fake-chats-mock.json';
 import { IoSend } from 'react-icons/io5';
+import { FaCamera } from 'react-icons/fa';
+import { FaSmile } from 'react-icons/fa';
+import { FaVideo } from 'react-icons/fa';
+import { FaPhoneAlt } from 'react-icons/fa';
+import { FaImage } from 'react-icons/fa';
+import { FaRegUserCircle } from 'react-icons/fa';
+import { IoMdArrowRoundBack } from 'react-icons/io';
+import { FaMicrophone } from 'react-icons/fa';
 import { useLanguageStore } from '@/context/language-store';
+import Image from 'next/image';
 
 const About = () => {
   const { language } = useLanguageStore();
@@ -150,11 +159,6 @@ const About = () => {
                 ? 'Review ratings and feedback from other clients to make informed decisions when hiring professionals.'
                 : 'Revisa calificaciones y reseñas de otros clientes para tomar la decision al contratar profesionales.'}
             </p>
-            {/* <h3>Mayor visibilidad</h3>
-            <p>
-              Aumenta tu exposición y alcance conectándote con una amplia red de
-              profesionales y potenciales empleadores.
-            </p> */}
           </div>
         </div>
       </div>
@@ -167,6 +171,24 @@ const About = () => {
             <div
               className={styles.message_container}
               key={index}>
+              <div className={styles.chat_options_top}>
+                <IoMdArrowRoundBack />
+                <div>
+                  <FaPhoneAlt />
+                  <FaVideo />
+                </div>
+              </div>
+              <div className={styles.user_info_container}>
+                <div className={styles.img_container}>
+                  <Image
+                    src={element.userImage}
+                    width={50}
+                    height={50}
+                    alt='fake-example-img'
+                  />
+                </div>
+                <span className={styles.user_info}>{element.userName}</span>
+              </div>
               {element.messages.map((message, index) => (
                 <span
                   className={
@@ -176,7 +198,15 @@ const About = () => {
                   {message.message}
                 </span>
               ))}
-              <div className={styles.writing_bar}>
+              <div className={styles.chat_options_bottom}>
+                <div>
+                  <FaCamera />
+                  <FaImage />
+                  <FaMicrophone />
+                </div>
+                <FaSmile
+                  style={{ position: 'absolute', right: '1.5em', zIndex: '1' }}
+                />
                 <IoSend />
               </div>
             </div>
