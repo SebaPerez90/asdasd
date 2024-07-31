@@ -6,11 +6,11 @@ import Footer from '@/components/Footer/Footer';
 const Home = () => {
   return (
     <>
-      <main>
+      {/* <main>
         <Landing />
         <About />
         <Services />
-      </main>
+      </main> */}
       <Footer />
     </>
   );
