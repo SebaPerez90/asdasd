@@ -8,7 +8,6 @@ import { FaSmile } from 'react-icons/fa';
 import { FaVideo } from 'react-icons/fa';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { FaImage } from 'react-icons/fa';
-import { FaRegUserCircle } from 'react-icons/fa';
 import { IoMdArrowRoundBack } from 'react-icons/io';
 import { FaMicrophone } from 'react-icons/fa';
 import { useLanguageStore } from '@/context/language-store';
