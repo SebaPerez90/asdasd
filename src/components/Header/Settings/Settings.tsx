@@ -7,6 +7,7 @@ import { useRef } from 'react';
 import english_icon from '@/assets/images/english-icon.png';
 import spanish_icon from '@/assets/images/spanish-icon.png';
 import Image from 'next/image';
+import {signIn} from 'next-auth/react'
 
 const Settings = () => {
   const { toggleLanguage, language } = useLanguageStore();
@@ -27,7 +28,7 @@ const Settings = () => {
         theme === 'dark' ? styles.settings_menu : styles.settings_menu_dark
       }>
       <div className={styles.acces_btns_container}>
-        <button className={styles.login_btn}>Login</button>
+        <button className={styles.login_btn} onClick={() => signIn()}>Login</button>
         <button className={styles.signup_btn}>Sign up</button>
       </div>
       <div
