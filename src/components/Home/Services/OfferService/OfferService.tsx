@@ -10,8 +10,7 @@ const OfferService = () => {
           ¿Quieres ofrecer servicios en <strong>EaseHire</strong>?{' '}
         </h1>
         <p>
-          Crea tu perfil y publica tus anuncios gratuitamente. Sólo te
-          retendremos una pequeña comisión cuando ganes dinero. <br></br>
+          Crea tu perfil y publica tus anuncios gratuitamente. Sólo recorda que tu perfil debe estar completo. <br></br>
           <br></br>Miles de clientes te esperan. ¡Únete en 5 minutos!
         </p>
         <button className={styles.join_us_btn}>Ofrecer Servicios</button>
