@@ -91,7 +91,6 @@
   display: flex;
   gap: 0.2em;
   font-size: 0.8em;
-  transform: translateY(-1.3em);
   color: var(--color-secondary-light);
 }
 
@@ -102,6 +101,7 @@
   gap: 0.2em;
   width: 14em;
   margin: 0 auto;
+  margin-top: 0.5em;
 }
 
 .professions {

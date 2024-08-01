@@ -1,0 +1,57 @@
+[
+  {
+    "categoria": "Salud Fisica",
+    "profesiones": [
+      "personal trainer",
+      "clases de yoga",
+      "masajista",
+      "preparador físico"
+    ],
+    "image": "/imgs/service6.jpg"
+  },
+  {
+    "categoria": "Belleza",
+    "profesiones": ["manicuria", "peluquero", "lashista", "podologia"],
+    "image": "/imgs/service3.jpg"
+  },
+  {
+    "categoria": "Mascotas",
+    "profesiones": ["paseador de perros", "cuidados del perro"],
+    "image": "/imgs/service.jpg"
+  },
+  {
+    "categoria": "Apoyo Académico",
+    "profesiones": [
+      "clases de ingles",
+      "clases matematicas",
+      "clases de apoyo"
+    ],
+    "image": "/imgs/service5.jpg"
+  },
+  {
+    "categoria": "Mecánica",
+    "profesiones": ["mecanico de autos", "mecanico de motos", "bicicletero"],
+    "image": "/imgs/service2.jpg"
+  },
+  {
+    "categoria": "Construcción",
+    "profesiones": ["albañil", "gasista", "electricista", "herrero", "plomero"],
+    "image": "/imgs/service4.jpg"
+  },
+  {
+    "categoria": "Tecnología",
+    "profesiones": ["reparador de celular", "reparador de pc"],
+    "image": "/imgs/service7.jpg"
+  },
+  {
+    "categoria": "Otro",
+    "profesiones": [
+      "limpieza",
+      "fletero",
+      "jardinero",
+      "cuidado de niños",
+      "cuidado de adultos"
+    ],
+    "image": "/imgs/service8.jpg"
+  }
+]
