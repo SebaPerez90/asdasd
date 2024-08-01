@@ -1,8 +1,8 @@
-import styles from './Services.module.css';
+import styles from './OfferService.module.css';
 import Image from 'next/image';
-import join_us from '@/assets/images/join-us.jpg';
+import offer_services from '@/assets/images/offer_services.jpg';
 
-const Services = () => {
+const OfferService = () => {
   return (
     <div className={styles.services_container}>
       <div className={styles.services_text}>
@@ -18,12 +18,12 @@ const Services = () => {
       </div>
       <div className={styles.img_container}>
         <Image
-          src={join_us}
-          alt='join_us_img'
+          src={offer_services}
+          alt='offer_services_img'
         />
       </div>
     </div>
   );
 };
 
-export default Services;
+export default OfferService;

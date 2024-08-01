@@ -21,12 +21,6 @@ const navLinks = [
     label: 'navlink-jobs',
   },
   {
-    path: '/about',
-    name_en: 'About',
-    name_es: 'Acerca',
-    label: 'navlink-about',
-  },
-  {
     path: '/contact',
     name_en: 'Contact',
     name_es: 'Contacto',
