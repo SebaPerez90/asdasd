@@ -44,7 +44,7 @@ const About = () => {
               {language === 'english' ? 'choose us' : 'elegirnos'}
             </strong>
           </h1>
-          <p className={styles.about_parragraph}>
+          <p>
             {language === 'english'
               ? 'We stand out from other platforms that focus solely on fixed jobs and are burdened with bureaucracy. Our app quickly connects you with specialists to address your specific needs'
               : 'Nos diferenciamos de otras plataformas que solo se enfocan en trabajos fijos y con mucha burocracia de por medio. Nuestra app te conecta rápidamente con especialistas para resolver tus necesidades específicas.'}
