@@ -9,12 +9,14 @@
 
 .our_services_container h1 {
   font-size: 2em;
+  font-weight: 900;
   color: var(--color-primary-light);
   width: 50ch;
 }
 .our_services_container p {
   margin-top: 1em;
   font-size: 1.2em;
+  font-weight: 400;
   color: var(--color-tertiary-light);
   width: 50ch;
 }
