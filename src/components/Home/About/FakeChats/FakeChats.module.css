@@ -2,7 +2,7 @@
   width: clamp(300px, 100%, 1500px);
   display: flex;
   align-items: center;
-  padding: 6em 0;
+  padding: 9em 0 5em 0;
 }
 
 .experiences_text {
