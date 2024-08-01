@@ -50,7 +50,7 @@ const FakeChats = () => {
         fadeEffect={{ crossFade: true }}
         slidesPerView={1}
         spaceBetween={12}
-        autoplay={{ delay: 3000, pauseOnMouseEnter: true }}
+        autoplay={{ delay: 2000, pauseOnMouseEnter: true }}
         className={styles.chats_container}>
         {chats.map((element, index) => (
           <SwiperSlide

@@ -10,7 +10,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 11em;
+  gap: 8em;
   padding: 9em 0;
 }
 
@@ -46,6 +46,97 @@
 .step_box span {
   font-weight: 400;
   color: var(--color-tertiary-light);
+}
+
+.img_service_container {
+  width: 12em;
+  height: 12em;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -4em;
+    left: 11em;
+    width: 40%;
+    height: 60%;
+    background: url('../../../assets/images/pic4.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 0.7;
+    box-shadow: var(--shadow-neutral);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 4em;
+    left: 11em;
+    width: 40%;
+    height: 60%;
+    background: url('../../../assets/images/pic3.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 0.7;
+    box-shadow: var(--shadow-neutral);
+  }
+}
+
+.img_service_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+  right: 1.5em;
+  bottom: 2em;
+  box-shadow: var(--shadow-bottom);
+  filter: contrast(1.3);
+}
+
+.img_feedback_container {
+  width: auto;
+  height: 12em;
+  border-radius: 10px;
+}
+
+.img_feedback_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hire_card_container {
+  width: 12em;
+  height: 12em;
+  position: relative;
+
+  &:after {
+    content: 'Hire!';
+    position: absolute;
+    bottom: 0.5em;
+    left: 30%;
+    height: auto;
+    background-color: var(--blue-strong);
+    color: var(--color-primary-dark);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    z-index: 1;
+  }
+}
+
+.hire_card_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  bottom: 2em;
+  border-radius: 5px;
+  box-shadow: var(--shadow-bottom);
 }
 
 .about_container {
