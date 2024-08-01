@@ -3,6 +3,10 @@
 import styles from './About.module.css';
 import { useLanguageStore } from '@/context/language-store';
 import FakeChats from './FakeChats/FakeChats';
+import Image from 'next/image';
+import pic5 from '@/assets/images/pic5.jpg';
+import hired from '@/assets/images/hired.jpg';
+import feedback from '@/assets/svg/feedback.svg';
 
 const About = () => {
   const { language } = useLanguageStore();
@@ -13,6 +17,14 @@ const About = () => {
         <h1>¿Cómo Funciona?</h1>
         <div className={styles.steps_boxes_container}>
           <div className={styles.step_box}>
+            <div className={styles.img_service_container}>
+              <Image
+                width={200}
+                height={200}
+                src={pic5}
+                alt='service-img'
+              />
+            </div>
             <h2>Busca lo que necesitas</h2>
             <span>
               Tenes una necesidad y lo sabemos, hay muchos profesionales
@@ -20,6 +32,14 @@ const About = () => {
             </span>
           </div>
           <div className={styles.step_box}>
+            <div className={styles.img_feedback_container}>
+              <Image
+                width={200}
+                height={200}
+                src={feedback}
+                alt='feedback-img'
+              />
+            </div>
             <h2>Escoge a tu profesional ideal</h2>
             <span>
               Compara entre cientos de profesionales disponibles y elige al que
@@ -27,6 +47,14 @@ const About = () => {
             </span>
           </div>
           <div className={styles.step_box}>
+            <div className={styles.hire_card_container}>
+              <Image
+                width={800}
+                height={800}
+                src={hired}
+                alt='hired-img'
+              />
+            </div>
             <h2>Contrátalo en 1 click</h2>
             <span>
               Olvidate de tanta burocracia. Es muy sencillo conectar con esa
