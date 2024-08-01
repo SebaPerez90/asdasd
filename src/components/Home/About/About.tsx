@@ -1,23 +1,40 @@
 'use client';
 
 import styles from './About.module.css';
-import chats from '@/utils/fake-chats-mock.json';
-import { IoSend } from 'react-icons/io5';
-import { FaCamera } from 'react-icons/fa';
-import { FaSmile } from 'react-icons/fa';
-import { FaVideo } from 'react-icons/fa';
-import { FaPhoneAlt } from 'react-icons/fa';
-import { FaImage } from 'react-icons/fa';
-import { IoMdArrowRoundBack } from 'react-icons/io';
-import { FaMicrophone } from 'react-icons/fa';
 import { useLanguageStore } from '@/context/language-store';
-import Image from 'next/image';
+import FakeChats from './FakeChats/FakeChats';
 
 const About = () => {
   const { language } = useLanguageStore();
 
   return (
     <section className={styles.main_container}>
+      <div className={styles.how_works_container}>
+        <h1>¿Cómo Funciona?</h1>
+        <div className={styles.steps_boxes_container}>
+          <div className={styles.step_box}>
+            <h2>Busca lo que necesitas</h2>
+            <span>
+              Tenes una necesidad y lo sabemos, hay muchos profesionales
+              capacitados dispuestos ayudarte
+            </span>
+          </div>
+          <div className={styles.step_box}>
+            <h2>Escoge a tu profesional ideal</h2>
+            <span>
+              Compara entre cientos de profesionales disponibles y elige al que
+              más te guste.
+            </span>
+          </div>
+          <div className={styles.step_box}>
+            <h2>Contrátalo en 1 click</h2>
+            <span>
+              Olvidate de tanta burocracia. Es muy sencillo conectar con esa
+              persona que buscas
+            </span>
+          </div>
+        </div>
+      </div>
       <div className={styles.about_container}>
         <div className={styles.about_text_container}>
           <h1>
@@ -160,63 +177,7 @@ const About = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div className={styles.experiences_container}>
-        <h1 className={styles.experiences_title}>
-          {language === 'english'
-            ? 'Do you identify with any of these '
-            : '¿Te identificas con alguna de estas '}
-          <strong>
-            {language === 'english' ? 'bad experiences' : 'malas experiencias'}
-          </strong>
-          ?
-        </h1>
-        <div className={styles.experiences}>
-          {chats.map((element, index) => (
-            <div
-              className={styles.message_container}
-              key={index}>
-              <div className={styles.chat_options_top}>
-                <IoMdArrowRoundBack />
-                <div>
-                  <FaPhoneAlt />
-                  <FaVideo />
-                </div>
-              </div>
-              <div className={styles.user_info_container}>
-                <div className={styles.img_container}>
-                  <Image
-                    src={element.userImage}
-                    width={50}
-                    height={50}
-                    alt='fake-example-img'
-                  />
-                </div>
-                <span className={styles.user_info}>{element.userName}</span>
-              </div>
-              {element.messages.map((message, index) => (
-                <span
-                  className={
-                    message.sender === 'user' ? styles.user : styles.employee
-                  }
-                  key={index}>
-                  {message.message}
-                </span>
-              ))}
-              <div className={styles.chat_options_bottom}>
-                <div>
-                  <FaCamera />
-                  <FaImage />
-                  <FaMicrophone />
-                </div>
-                <FaSmile
-                  style={{ position: 'absolute', right: '1.5em', zIndex: '1' }}
-                />
-                <IoSend />
-              </div>
-            </div>
-          ))}
-        </div>
+        <FakeChats />
       </div>
     </section>
   );
