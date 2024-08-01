@@ -24,6 +24,12 @@ const OurServices = () => {
               />
             </div>
             <h3>{category.categoria}</h3>
+            <ul>
+              <span>+</span>
+              {category.profesiones.map((profession, index) => (
+                <li key={index}>{profession}</li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>
