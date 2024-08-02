@@ -72,11 +72,12 @@ const About = () => {
       <div className={styles.about_container}>
         <div className={styles.about_text_container}>
           <h1>
-            {language === 'english' ? '¿Why choose us?' : '¿Por qué elegirnos?'}
+            {language === 'english' ? '¿Why' : '¿Por qué'}
             <strong>
               {' '}
               {language === 'english' ? 'choose us' : 'elegirnos'}
             </strong>
+            ?
           </h1>
           <p>
             {language === 'english'
