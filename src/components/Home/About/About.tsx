@@ -25,7 +25,9 @@ const About = () => {
                 alt='service-img'
               />
             </div>
-            <h2>Busca lo que necesitas</h2>
+            <h2>
+              <strong>1</strong>Busca lo que necesitas
+            </h2>
             <span>
               Tenes una necesidad y lo sabemos, hay muchos profesionales
               capacitados dispuestos ayudarte
@@ -40,7 +42,9 @@ const About = () => {
                 alt='feedback-img'
               />
             </div>
-            <h2>Escoge a tu profesional ideal</h2>
+            <h2>
+              <strong>2</strong>Escoge a tu profesional ideal
+            </h2>
             <span>
               Compara entre cientos de profesionales disponibles y elige al que
               más te guste.
@@ -55,7 +59,9 @@ const About = () => {
                 alt='hired-img'
               />
             </div>
-            <h2>Contrátalo en 1 click</h2>
+            <h2>
+              <strong>3</strong>Contrátalo en 1 click
+            </h2>
             <span>
               Olvidate de tanta burocracia. Es muy sencillo conectar con esa
               persona que buscas
