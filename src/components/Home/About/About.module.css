@@ -10,7 +10,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 8em;
+  gap: 9em;
   padding: 9em 0;
 }
 
@@ -41,6 +41,18 @@
   font-size: 1.4em;
   font-weight: 800;
   color: var(--color-primary-light);
+}
+
+.step_box h2 strong {
+  color: var(--blue-strong);
+  font-weight: bolder;
+  border: 4px solid var(--blue-strong);
+  padding: 0.2em 0.5em;
+  border-radius: 50%;
+  position: relative;
+  left: -0.5em;
+  top: -0.1em;
+  font-size: 0.7em;
 }
 
 .step_box span {
@@ -102,6 +114,21 @@
   width: auto;
   height: 12em;
   border-radius: 10px;
+  position: relative;
+  padding: 0 0.5em;
+  bottom: 2em;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -1em;
+    filter: blur(2px);
+    left: 5.5em;
+    width: 9em;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #00000053;
+  }
 }
 
 .img_feedback_container img {
@@ -118,11 +145,12 @@
   &:after {
     content: 'Hire!';
     position: absolute;
-    bottom: 0.5em;
-    left: 30%;
+    bottom: 0.2em;
+    left: 35%;
     height: auto;
     background-color: var(--blue-strong);
     color: var(--color-primary-dark);
+    box-shadow: var(--shadow-bottom);
     padding: 0.5em 1em;
     border-radius: 5px;
     z-index: 1;
