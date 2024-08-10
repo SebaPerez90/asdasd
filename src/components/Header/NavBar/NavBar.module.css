@@ -1,15 +1,23 @@
 /* Light Theme */
 
 .header_container {
+  position: fixed;
+  z-index: 50;
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 1.8em 0em;
-  position: relative;
+  padding: 2em 0em;
   background-color: var(--bg-light);
   font-weight: 600;
 }
+
+.navbar_fixed {
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px 0 #00000033;
+  background: inherit;
+}
+
 .navbar {
   display: flex;
   gap: 2em;
@@ -17,7 +25,7 @@
 
 .links {
   text-decoration: none;
-  color: var(--color-primary-light);
+  color: var(--color-secondary-light);
   border-bottom: 3px solid transparent;
 
   &:hover {
@@ -38,7 +46,7 @@
   left: 2em;
   cursor: pointer;
   color: var(--blue-strong);
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 900;
   transition: all 200ms;
 
@@ -51,15 +59,15 @@
 /* Dark Theme */
 
 .header_container_dark {
+  position: fixed;
+  z-index: 50;
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 1.8em 0em;
-  position: relative;
+  padding: 2em 0em;
   background-color: var(--bg-dark);
   color: var(--color-primary-dark);
-  font-weight: 600;
 
   .links {
     text-decoration: none;
