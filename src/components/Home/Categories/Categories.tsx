@@ -24,7 +24,7 @@ const Categories = () => {
       effect='fade'
       fadeEffect={{ crossFade: true }}
       slidesPerView={1}
-      autoplay={{ delay: 1000 }}
+      autoplay={{ delay: 5000 }}
       className={styles.categories_container}>
       {images.map((item, index) => (
         <SwiperSlide
