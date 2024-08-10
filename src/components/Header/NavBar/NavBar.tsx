@@ -6,6 +6,7 @@ import Settings from '../Settings/Settings';
 import { usePathname, useRouter } from 'next/navigation';
 import { useThemeStore } from '@/context/theme-store';
 import { useLanguageStore } from '@/context/language-store';
+import { useEffect } from 'react';
 
 const navLinks = [
   {
@@ -34,12 +35,38 @@ const NavBar = () => {
   const pathname = usePathname();
   const router = useRouter();
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const nav_bar: HTMLElement | null = document.getElementById('nav-bar');
+      window.scrollY !== 0
+        ? nav_bar?.classList.add(styles.navbar_fixed)
+        : nav_bar?.classList.remove(styles.navbar_fixed);
+    };
+
+    handleScroll();
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', handleScroll);
+    }
+
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
+  }, []);
+
   return (
     <header
+      id='nav-bar'
       className={
         theme === 'dark'
           ? styles.header_container
           : styles.header_container_dark
+      }
+      style={
+        theme === 'dark'
+          ? { backgroundColor: '#ffffff89' }
+          : { backgroundColor: '#0000008f' }
       }>
       <div
         className={styles.logo_container}

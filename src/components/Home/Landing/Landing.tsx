@@ -1,6 +1,6 @@
 'use client';
 
-import Members from '../Members/Members';
+import Categories from '../Categories/Categories';
 import styles from './Landing.module.css';
 import { useLanguageStore } from '@/context/language-store';
 
@@ -13,8 +13,8 @@ const Landing = () => {
         <div className={styles.landing_text_container}>
           <h1 className={styles.title}>
             {language === 'english'
-              ? 'Finding reliable help has never been easier or safer!'
-              : '¡Encontrar ayuda confiable nunca fue tan fácil y seguro!'}
+              ? 'Finding trusted professionals has never been easier or safer!'
+              : '¡Encontrar Profesionales confiables, nunca fue tan fácil y seguro!'}
           </h1>
 
           <p className={styles.paragraph}>
@@ -42,7 +42,7 @@ const Landing = () => {
           </button>
         </div>
       </div>
-      <Members />
+      <Categories />
     </div>
   );
 };

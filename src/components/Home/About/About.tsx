@@ -4,7 +4,6 @@ import styles from './About.module.css';
 import { useLanguageStore } from '@/context/language-store';
 import FakeChats from './FakeChats/FakeChats';
 import Image from 'next/image';
-import pic5 from '@/assets/images/pic5.jpg';
 import hired from '@/assets/images/hired.jpg';
 import feedback from '@/assets/svg/feedback.svg';
 
@@ -19,9 +18,9 @@ const About = () => {
           <div className={styles.step_box}>
             <div className={styles.img_service_container}>
               <Image
-                width={200}
-                height={200}
-                src={pic5}
+                width={600}
+                height={600}
+                src={'/imgs/service9.jpg'}
                 alt='service-img'
               />
             </div>
@@ -36,8 +35,8 @@ const About = () => {
           <div className={styles.step_box}>
             <div className={styles.img_feedback_container}>
               <Image
-                width={200}
-                height={200}
+                width={500}
+                height={500}
                 src={feedback}
                 alt='feedback-img'
               />
@@ -53,8 +52,8 @@ const About = () => {
           <div className={styles.step_box}>
             <div className={styles.hire_card_container}>
               <Image
-                width={800}
-                height={800}
+                width={900}
+                height={900}
                 src={hired}
                 alt='hired-img'
               />
