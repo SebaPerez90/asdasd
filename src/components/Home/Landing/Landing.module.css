@@ -1,6 +1,6 @@
 .main_container {
   display: flex;
-  padding-top: 5.45em;
+  padding-top: 5.7em;
 }
 
 .landing_info_container {
@@ -10,7 +10,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding-top: 3em;
-  padding-left: 3em;
+  padding-left: 6em;
   gap: 3em;
 }
 
@@ -80,12 +80,46 @@
   }
 }
 
+/* Dark Theme */
+
+.main_container_dark {
+  display: flex;
+  background-color: var(--bg-dark);
+  padding-top: 5.7em;
+
+  .title {
+    color: var(--color-primary-dark);
+  }
+  .paragraph {
+    color: var(--color-tertiary-dark);
+  }
+
+  .paragraph strong {
+    color: var(--color-primary-dark);
+    &::after {
+      background: linear-gradient(to left, var(--red-weak), var(--red-medium));
+    }
+  }
+
+  .posts_btn,
+  .talents_btn {
+    background: var(--red-strong);
+    &:hover {
+      background-color: var(--red-medium);
+    }
+  }
+}
 /* Responsive Design */
 
 @media (width < 1000px) {
+  .landing_info_container {
+    padding-left: 2em;
+  }
+
   .landing_text_container {
     width: 100%;
   }
+
   .landing_text_container h1 {
     font-size: 3em;
   }

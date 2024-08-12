@@ -6,14 +6,10 @@ import styles from './Categories.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import Image from 'next/image';
-import { useEffect } from 'react';
+import { useThemeStore } from '@/context/theme-store';
 
 const Categories = () => {
-  useEffect(() => {
-    if (window.innerWidth < 750) {
-      console.log('pepe');
-    }
-  }, []);
+  const { theme } = useThemeStore();
 
   const images = [
     '/imgs/service2.jpg',
@@ -47,7 +43,12 @@ const Categories = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className={styles.categories_container_mobile}>
+      <div
+        className={
+          theme === 'dark'
+            ? styles.categories_container_mobile_dark
+            : styles.categories_container_mobile
+        }>
         <div></div>
         <div></div>
         <div></div>

@@ -8,8 +8,10 @@
   --color-tertiary-dark: #ceced999;
   --box-dark: #33353f;
   --border-dark: #474a58;
-  --btn-dark: #32363f;
-  --btn-dark-hover: #414853;
+
+  --red-strong: #ff204e;
+  --red-medium: #c71d50;
+  --red-weak: #5d0e41;
 
   /* Light Theme base */
   --bg-light: #fff;
@@ -18,17 +20,15 @@
   --color-tertiary-light: #777e87;
   --box-light: #f3f3f3;
   --border-light: #ccc;
-  --btn-light: #ebebef;
-  --btn-light-hover: #ceced3;
-
-  --shadow-top: 0px -3px 15px 0px rgba(0, 0, 0, 0.3);
-  --shadow-neutral: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
-  --shadow-bottom: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
-  --shadow-blue: 0px 3px 15px 0px rgba(24, 109, 236, 0.3);
-
+  
   --blue-strong: #196eed;
   --blue-medium: #47b5ff;
   --blue-weak: #dff6ff;
+  
+  --shadow-top: 0px -3px 15px 0px rgba(0, 0, 0, 0.3);
+  --shadow-neutral: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  --shadow-bottom: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
+
 }
 
 * {

@@ -6,7 +6,7 @@
 }
 
 .how_works_container {
-  background: var(--box-light);
+  background: var(--bg-light);
   width: 100%;
   display: flex;
   flex-direction: column;

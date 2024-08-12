@@ -20,6 +20,7 @@
 
 .navbar {
   display: flex;
+  align-items: center;
   gap: 2em;
 }
 
@@ -27,6 +28,7 @@
   text-decoration: none;
   color: var(--color-secondary-light);
   border-bottom: 3px solid transparent;
+  font-size: 1.2em;
 
   &:hover {
     color: var(--blue-medium);
@@ -70,7 +72,39 @@
   color: var(--color-primary-dark);
 
   .links {
-    text-decoration: none;
     color: var(--color-primary-dark);
+
+    &:hover {
+      color: var(--red-strong);
+      transition: all 200ms;
+    }
+  }
+
+  .logo_container {
+    color: var(--red-strong);
+  }
+}
+
+/* Responsive Design */
+
+@media (width < 900px) {
+  .header_container {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7em;
+  }
+  .logo_container {
+    position: relative;
+  }
+  .header_container_dark {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7em;
+  }
+}
+
+@media (width < 750px) {
+  .navbar {
+    display: none;
   }
 }

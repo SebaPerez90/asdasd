@@ -134,7 +134,7 @@
 .theme_options_visible {
   scale: 1;
   transition: 200ms;
-  background-color: var(--box-light);
+  background-color: var(--bg-light);
   color: var(--color-primary-light);
 }
 
@@ -159,6 +159,7 @@
   gap: 1.5em;
 
   .theme_btns_container {
+    color: var(--red-strong);
     &::after {
       background-color: var(--border-dark);
     }
@@ -177,14 +178,38 @@
 
   .language_btn {
     color: var(--color-primary-light);
-    background: var(--btn-light);
-
-    &:hover {
-      background-color: var(--btn-light-hover);
-    }
 
     &:active {
       outline: 1px solid var(--border-light);
     }
+  }
+  .login_btn {
+    background-color: var(--bg-light);
+
+    &:hover {
+      background-color: var(--bg-light);
+      color: var(--red-medium);
+      border: 1px solid var(--red-medium);
+      transition: all 200ms;
+    }
+  }
+
+  .signup_btn {
+    background-color: var(--red-strong);
+
+    &:hover {
+      background-color: var(--red-medium);
+    }
+  }
+}
+
+/* Responsive Design */
+
+@media (width < 750px) {
+  .settings_menu {
+    display: none;
+  }
+  .settings_menu_dark {
+    display: none;
   }
 }

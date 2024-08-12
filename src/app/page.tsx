@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <main>
+      <main id='main-section'>
         <Landing />
         <About />
         <GetService />
