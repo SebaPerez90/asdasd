@@ -1,4 +1,4 @@
-import styles from './Settings.module.css';
+import styles from './Preferences.module.css';
 import { useLanguageStore } from '@/context/language-store';
 import { useThemeStore } from '@/context/theme-store';
 import { MdSunny } from 'react-icons/md';

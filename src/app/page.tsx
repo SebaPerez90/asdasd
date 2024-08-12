@@ -1,3 +1,4 @@
+import NavBar from '@/components/Header/NavBar/NavBar';
 import Landing from '@/components/Home/Landing/Landing';
 import About from '@/components/Home/About/About';
 import Footer from '@/components/Footer/Footer';
@@ -8,14 +9,15 @@ import OurServices from '@/components/Home/Services/OurServices/OurServices';
 const Home = () => {
   return (
     <>
+      <NavBar />
       <main>
         <Landing />
-        <About />
+        {/* <About />
         <GetService />
         <OurServices />
-        <OfferService />
+        <OfferService /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
