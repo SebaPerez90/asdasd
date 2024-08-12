@@ -1,6 +1,6 @@
 .main_container {
   display: flex;
-  padding-top: 5.45em;
+  padding-top: 5.7em;
 }
 
 .landing_info_container {
@@ -85,7 +85,7 @@
 .main_container_dark {
   display: flex;
   background-color: var(--bg-dark);
-  padding-top: 5.45em;
+  padding-top: 5.7em;
 
   .title {
     color: var(--color-primary-dark);

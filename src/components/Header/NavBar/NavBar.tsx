@@ -7,6 +7,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useThemeStore } from '@/context/theme-store';
 import { useLanguageStore } from '@/context/language-store';
 import { useEffect } from 'react';
+import HamburguerMenu from '../HamburguerMenu/HamburguerMenu';
 
 const navLinks = [
   {
@@ -60,13 +61,13 @@ const NavBar = () => {
       id='nav-bar'
       className={
         theme === 'dark'
-          ? styles.header_container
-          : styles.header_container_dark
+          ? styles.header_container_dark
+          : styles.header_container
       }
       style={
         theme === 'dark'
-          ? { backgroundColor: '#ffffff89' }
-          : { backgroundColor: '#1b1b1f85' }
+          ? { backgroundColor: '#1b1b1f85' }
+          : { backgroundColor: '#ffffff89' }
       }>
       <div
         className={styles.logo_container}
@@ -87,6 +88,7 @@ const NavBar = () => {
         ))}
       </nav>
       <Preferences />
+      <HamburguerMenu />
     </header>
   );
 };

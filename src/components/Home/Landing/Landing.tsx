@@ -11,7 +11,7 @@ const Landing = () => {
   return (
     <div
       className={
-        theme === 'dark' ? styles.main_container : styles.main_container_dark
+        theme === 'dark' ? styles.main_container_dark : styles.main_container
       }>
       <div className={styles.landing_info_container}>
         <div className={styles.landing_text_container}>

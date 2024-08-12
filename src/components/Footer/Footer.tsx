@@ -4,7 +4,9 @@ import members from '@/assets/images/members.png';
 
 const Footer = () => {
   return (
-    <div className={styles.footer_container}>
+    <footer
+      id='footer-section'
+      className={styles.footer_container}>
       <div className={styles.subdiv_container}>
         <div className={styles.text_container}>
           <h1>
@@ -54,7 +56,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

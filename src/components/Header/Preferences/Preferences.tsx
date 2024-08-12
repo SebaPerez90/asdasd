@@ -15,16 +15,16 @@ const Settings = () => {
   const themeOptions = useRef<HTMLDivElement | null>(null);
   const openThemeOptions = () => {
     theme === 'dark'
-      ? themeOptions.current?.classList.toggle(styles.theme_options_visible)
-      : themeOptions.current?.classList.toggle(
+      ? themeOptions.current?.classList.toggle(
           styles.theme_options_visible_dark
-        );
+        )
+      : themeOptions.current?.classList.toggle(styles.theme_options_visible);
   };
 
   return (
     <div
       className={
-        theme === 'dark' ? styles.settings_menu : styles.settings_menu_dark
+        theme === 'dark' ? styles.settings_menu_dark : styles.settings_menu
       }>
       <div className={styles.acces_btns_container}>
         <button className={styles.login_btn}>Login</button>
@@ -39,12 +39,12 @@ const Settings = () => {
           className={styles.theme_options_hide}>
           <span
             className={styles.btn}
-            onClick={theme === 'dark' ? toggleTheme : undefined}>
+            onClick={theme === 'dark' ? undefined : toggleTheme}>
             {language === 'english' ? 'Dark' : 'Oscuro'}
           </span>
           <span
             className={styles.btn}
-            onClick={theme === 'dark' ? undefined : toggleTheme}>
+            onClick={theme === 'dark' ? toggleTheme : undefined}>
             {language === 'english' ? 'Light' : 'Claro'}
           </span>
         </div>

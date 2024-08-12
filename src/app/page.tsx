@@ -10,14 +10,14 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <main>
+      <main id='main-section'>
         <Landing />
-        {/* <About />
+        <About />
         <GetService />
         <OurServices />
-        <OfferService /> */}
+        <OfferService />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

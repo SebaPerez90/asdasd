@@ -24,6 +24,53 @@
 
 .categories_container_mobile {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: auto;
+  margin-top: 2em;
+  position: relative;
+}
+
+.categories_container_mobile > :nth-child(1) {
+  position: absolute;
+  width: 47%;
+  height: 47%;
+  right: 1%;
+  bottom: 1%;
+  background: url('../../../assets/svg/car-repair.svg') no-repeat center center;
+  background-size: contain;
+  background-color: var(--box-light);
+  z-index: 1;
+  box-shadow: var(--shadow-neutral);
+  border-radius: 15px;
+}
+.categories_container_mobile > :nth-child(2) {
+  position: absolute;
+  left: 0;
+  width: 15em;
+  height: 15em;
+  background: url('../../../assets/svg/personal-trainer.svg') no-repeat center
+    center;
+  background-size: contain;
+  background-color: var(--box-light);
+  z-index: 2;
+  box-shadow: var(--shadow-neutral);
+  border-radius: 15px;
+}
+.categories_container_mobile > :nth-child(3) {
+  position: absolute;
+  width: 47%;
+  height: 47%;
+  right: 1%;
+  top: 1%;
+  background: url('../../../assets/svg/barder.svg') no-repeat center center;
+  background-size: contain;
+  background-color: var(--box-light);
+  z-index: 1;
+  box-shadow: var(--shadow-neutral);
+  border-radius: 15px;
 }
 
 .img_container {
@@ -38,6 +85,61 @@
   z-index: 1;
 }
 
+/* Dark Theme */
+
+.categories_container_mobile_dark {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: auto;
+  margin-top: 2em;
+  position: relative;
+}
+.categories_container_mobile_dark > :nth-child(1) {
+  position: absolute;
+  width: 47%;
+  height: 47%;
+  right: 1%;
+  bottom: 1%;
+  background: url('../../../assets/svg/car-repair.svg') no-repeat center center;
+  background-size: contain;
+  background-color: var(--border-dark);
+  filter: contrast(1.3);
+  z-index: 1;
+  box-shadow: var(--shadow-neutral);
+  border-radius: 15px;
+}
+.categories_container_mobile_dark > :nth-child(2) {
+  position: absolute;
+  left: 0;
+  width: 15em;
+  height: 15em;
+  background: url('../../../assets/svg/personal-trainer.svg') no-repeat center
+    center;
+  background-size: contain;
+  background-color: var(--border-dark);
+  filter: contrast(1.3);
+  z-index: 2;
+  box-shadow: var(--shadow-neutral);
+  border-radius: 15px;
+}
+.categories_container_mobile_dark > :nth-child(3) {
+  position: absolute;
+  width: 47%;
+  height: 47%;
+  right: 1%;
+  top: 1%;
+  background: url('../../../assets/svg/barder.svg') no-repeat center center;
+  background-size: contain;
+  background-color: var(--border-dark);
+  filter: contrast(1.3);
+  z-index: 1;
+  box-shadow: var(--shadow-neutral);
+  border-radius: 15px;
+}
+
 /* Responsive Design */
 
 @media (width < 750px) {
@@ -47,53 +149,8 @@
 
   .categories_container_mobile {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    height: auto;
-    margin-top: 2em;
-    position: relative;
   }
-
-  .categories_container_mobile > :nth-child(1) {
-    position: absolute;
-    width: 47%;
-    height: 47%;
-    right: 1%;
-    bottom: 1%;
-    background: url('../../../assets/svg/car-repair.svg') no-repeat center
-      center;
-    background-size: contain;
-    background-color: var(--box-light);
-    z-index: 1;
-    box-shadow: var(--shadow-neutral);
-    border-radius: 15px;
-  }
-  .categories_container_mobile > :nth-child(2) {
-    position: absolute;
-    left: 0;
-    width: 15em;
-    height: 15em;
-    background: url('../../../assets/svg/personal-trainer.svg') no-repeat center
-      center;
-    background-size: contain;
-    background-color: var(--box-light);
-    z-index: 2;
-    box-shadow: var(--shadow-neutral);
-    border-radius: 15px;
-  }
-  .categories_container_mobile > :nth-child(3) {
-    position: absolute;
-    width: 47%;
-    height: 47%;
-    right: 1%;
-    top: 1%;
-    background: url('../../../assets/svg/barder.svg') no-repeat center center;
-    background-size: contain;
-    background-color: var(--box-light);
-    z-index: 1;
-    box-shadow: var(--shadow-neutral);
-    border-radius: 15px;
+  .categories_container_mobile_dark {
+    display: flex;
   }
 }

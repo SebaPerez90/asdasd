@@ -134,7 +134,7 @@
 .theme_options_visible {
   scale: 1;
   transition: 200ms;
-  background-color: var(--box-light);
+  background-color: var(--bg-light);
   color: var(--color-primary-light);
 }
 
@@ -200,5 +200,16 @@
     &:hover {
       background-color: var(--red-medium);
     }
+  }
+}
+
+/* Responsive Design */
+
+@media (width < 750px) {
+  .settings_menu {
+    display: none;
+  }
+  .settings_menu_dark {
+    display: none;
   }
 }
