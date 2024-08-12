@@ -12,12 +12,12 @@ const Home = () => {
       <NavBar />
       <main>
         <Landing />
-        {/* <About />
+        <About />
         <GetService />
         <OurServices />
-        <OfferService /> */}
+        <OfferService />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
