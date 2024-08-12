@@ -66,7 +66,7 @@ const NavBar = () => {
       style={
         theme === 'dark'
           ? { backgroundColor: '#ffffff89' }
-          : { backgroundColor: '#0000008f' }
+          : { backgroundColor: '#1b1b1f85' }
       }>
       <div
         className={styles.logo_container}
