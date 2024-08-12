@@ -1,6 +1,6 @@
 .main_container {
   display: flex;
-  padding-top: 5.3em;
+  padding-top: 5.45em;
 }
 
 .landing_info_container {
@@ -80,17 +80,37 @@
   }
 }
 
-/* Responsive */
+/* Responsive Design */
 
-/* @media (width > 1200px) {
+@media (width < 1000px) {
+  .landing_text_container {
+    width: 100%;
+  }
+  .landing_text_container h1 {
+    font-size: 3em;
+  }
+  .landing_text_container p {
+    width: 90%;
+    font-size: 1.5em;
+  }
+}
+
+@media (width < 750px) {
   .landing_info_container {
-    padding-left: 5em;
-  }
-  .title {
-    font-size: 3.6em;
+    width: 60%;
   }
 
-  .paragraph {
-    width: 45ch;
+  .landing_text_container h1 {
+    font-size: 2.5em;
   }
-} */
+
+  .landing_text_container p {
+    width: 100%;
+  }
+
+  .paragraph strong {
+    &::after {
+      display: none;
+    }
+  }
+}

@@ -22,6 +22,10 @@
   }
 }
 
+.categories_container_mobile {
+  display: none;
+}
+
 .img_container {
   width: 100%;
 }
@@ -34,27 +38,62 @@
   z-index: 1;
 }
 
-/* .swiper_container {
-  position: absolute;
-  width: 30em;
-  left: 3em;
-  margin-bottom: 2em;
-  background-color: #ffffff75;
-  padding: 0.7em;
-  border-radius: 4px;
-  backdrop-filter: blur(10px);
-  z-index: 3;
-  opacity: 0;
-}
+/* Responsive Design */
 
-.swiper_card {
-  font-weight: 700;
-  color: var(--color-primary-light);
-  line-height: 1.7em;
-} */
-
-/* @media (width > 1200px) {
-  .members {
-    height: 40em;
+@media (width < 750px) {
+  .categories_container {
+    display: none;
   }
-} */
+
+  .categories_container_mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: auto;
+    margin-top: 2em;
+    position: relative;
+  }
+
+  .categories_container_mobile > :nth-child(1) {
+    position: absolute;
+    width: 47%;
+    height: 47%;
+    right: 1%;
+    bottom: 1%;
+    background: url('../../../assets/svg/car-repair.svg') no-repeat center
+      center;
+    background-size: contain;
+    background-color: var(--box-light);
+    z-index: 1;
+    box-shadow: var(--shadow-neutral);
+    border-radius: 15px;
+  }
+  .categories_container_mobile > :nth-child(2) {
+    position: absolute;
+    left: 0;
+    width: 15em;
+    height: 15em;
+    background: url('../../../assets/svg/personal-trainer.svg') no-repeat center
+      center;
+    background-size: contain;
+    background-color: var(--box-light);
+    z-index: 2;
+    box-shadow: var(--shadow-neutral);
+    border-radius: 15px;
+  }
+  .categories_container_mobile > :nth-child(3) {
+    position: absolute;
+    width: 47%;
+    height: 47%;
+    right: 1%;
+    top: 1%;
+    background: url('../../../assets/svg/barder.svg') no-repeat center center;
+    background-size: contain;
+    background-color: var(--box-light);
+    z-index: 1;
+    box-shadow: var(--shadow-neutral);
+    border-radius: 15px;
+  }
+}

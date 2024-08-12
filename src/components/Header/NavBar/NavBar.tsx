@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import styles from './NavBar.module.css';
-import Settings from '../Settings/Settings';
+import Preferences from '../Preferences/Preferences';
 import { usePathname, useRouter } from 'next/navigation';
 import { useThemeStore } from '@/context/theme-store';
 import { useLanguageStore } from '@/context/language-store';
@@ -86,7 +86,7 @@ const NavBar = () => {
           </Link>
         ))}
       </nav>
-      <Settings />
+      <Preferences />
     </header>
   );
 };
