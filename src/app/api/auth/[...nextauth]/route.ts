@@ -8,10 +8,6 @@ export const authOptions = NextAuth({
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
     }),
   ],
-
-  pages: {
-    signIn: '/auth',
-  },
 });
 
 export { authOptions as GET, authOptions as POST };
