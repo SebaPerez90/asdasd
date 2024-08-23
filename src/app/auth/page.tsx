@@ -1,8 +1,15 @@
 'use client';
 
-import { signIn } from 'next-auth/react';
+import { signIn, useSession } from 'next-auth/react';
 
 export default function SignIn() {
+  const { data: session } = useSession();
+  if (session) {
+    alert('logeado');
+  } else {
+    alert('no logeado');
+  }
+
   return (
     <div
       style={{
