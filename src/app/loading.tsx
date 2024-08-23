@@ -1,4 +1,5 @@
 import './globals.css';
+
 const loading = () => {
   return (
     <div className='loader-container'>

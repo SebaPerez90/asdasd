@@ -17,22 +17,14 @@ const Landing = () => {
         <div className={styles.landing_text_container}>
           <h1 className={styles.title}>
             {language === 'english'
-              ? 'Finding trusted professionals has never been easier or safer!'
-              : '¡Encontrar Profesionales confiables, nunca fue tan fácil y seguro!'}
+              ? 'Find Trustworthy Professionals Easily and Securely'
+              : '¡Encuentra Profesionales Confiables de Manera Fácil y Segura'}
           </h1>
 
           <p className={styles.paragraph}>
             {language === 'english'
-              ? 'With just a few clicks, connect with skilled professionals who meet your needs.'
-              : 'Con solo unos pocos clicks, conecta con profesionales capacitados que cumplen con tus necesidades.'}
-            <br></br>
-            <br></br>
-            <strong>
-              {language === 'english'
-                ? 'We simplify the process!'
-                : 'Nosotros simplificamos el proceso!'}{' '}
-              🚀
-            </strong>
+              ? 'With EaseHire, connecting with experts who meet your exact needs is as simple as a few clicks. We take care of simplifying the entire process for you. 🚀'
+              : 'Con EaseHire, conectar con expertos que cumplen exactamente con tus necesidades es tan sencillo como hacer unos pocos clics. Nos encargamos de simplificar todo el proceso para ti. 🚀'}
           </p>
         </div>
         <div className={styles.buttons_container}>
