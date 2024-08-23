@@ -1,8 +1,22 @@
+'use client';
+
 import Image from 'next/image';
 import styles from './Footer.module.css';
 import members from '@/assets/images/members.png';
+import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 const Footer = () => {
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (pathname === '/auth') {
+      const footer: HTMLElement | null =
+        document.getElementById('footer-section');
+      footer!.style.display = 'none';
+    }
+  }, [pathname]);
+
   return (
     <footer
       id='footer-section'

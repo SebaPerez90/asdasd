@@ -8,6 +8,8 @@ import { useThemeStore } from '@/context/theme-store';
 import { useLanguageStore } from '@/context/language-store';
 import { useEffect } from 'react';
 import HamburguerMenu from '../HamburguerMenu/HamburguerMenu';
+import Image from 'next/image';
+import icon_app from '@/assets/images/icon-app.png';
 
 const navLinks = [
   {
@@ -35,6 +37,13 @@ const NavBar = () => {
   const { language } = useLanguageStore();
   const pathname = usePathname();
   const router = useRouter();
+
+  useEffect(() => {
+    if (pathname === '/auth') {
+      const nav_bar: HTMLElement | null = document.getElementById('nav-bar');
+      nav_bar!.style.display = 'none';
+    }
+  }, [pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -72,7 +81,14 @@ const NavBar = () => {
       <div
         className={styles.logo_container}
         onClick={() => router.push('/')}>
-        Ease Hire
+        <Image
+          priority
+          width={45}
+          height={45}
+          src={icon_app}
+          alt='icon-app'
+        />
+        EaseHire
       </div>
       <nav className={styles.navbar}>
         {navLinks.map((element, index) => (

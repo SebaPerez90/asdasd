@@ -9,53 +9,15 @@
   z-index: 100;
 }
 
-.acces_btns_container {
-  display: flex;
-  gap: 0.5em;
-  position: relative;
-
-  &:after {
-    content: '';
-    position: absolute;
-    right: -0.8em;
-    width: 2px;
-    height: 2.6em;
-    opacity: 0.5;
-    background-color: var(--border-light);
-  }
-}
-
 .login_btn {
-  background-color: var(--bg-light);
-  padding: 1em 2em;
-  border: 1px solid #80808042;
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 0.85em;
-  color: var(--color-tertiary-light);
-  border: 1px solid var(--color-tertiary-light);
-
-  &:hover {
-    background-color: var(--bg-light);
-    color: var(--blue-medium);
-    border: 1px solid var(--blue-medium);
-    cursor: pointer;
-    transition: 200ms;
-  }
-  &:active {
-    scale: 0.9;
-  }
-}
-
-.signup_btn {
   background: var(--blue-strong);
   padding: 1em 2em;
   border: 1px solid #80808042;
   border-radius: 8px;
   font-weight: 500;
-  font-size: 0.85em;
+  font-size: 0.9em;
   color: var(--color-primary-dark);
-
+  
   &:hover {
     background-color: var(--blue-medium);
     color: var(--color-secondary-dark);
@@ -191,14 +153,6 @@
       color: var(--red-medium);
       border: 1px solid var(--red-medium);
       transition: all 200ms;
-    }
-  }
-
-  .signup_btn {
-    background-color: var(--red-strong);
-
-    &:hover {
-      background-color: var(--red-medium);
     }
   }
 }

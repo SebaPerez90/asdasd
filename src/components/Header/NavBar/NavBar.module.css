@@ -28,7 +28,7 @@
   text-decoration: none;
   color: var(--color-secondary-light);
   border-bottom: 3px solid transparent;
-  font-size: 1.2em;
+  font-size: 1em;
 
   &:hover {
     color: var(--blue-medium);
@@ -51,6 +51,9 @@
   font-size: 1.5em;
   font-weight: 900;
   transition: all 200ms;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.2em;
 
   &:hover {
     color: var(--blue-medium);

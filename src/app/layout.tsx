@@ -1,8 +1,12 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import Providers from './Provider';
+import Footer from '@/components/Footer/Footer';
+import NavBar from '@/components/Header/NavBar/NavBar';
+import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
-  title: 'Ease Hire',
+  title: 'EaseHire',
 };
 
 export default function RootLayout({
@@ -13,7 +17,12 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
-        {children}
+        <Providers>
+          <NavBar />
+          {children}
+        </Providers>
+        <Footer />
+        <Toaster />
       </body>
     </html>
   );

@@ -2,7 +2,7 @@
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 250px);
+  grid-template-columns: repeat(1, fit-content(350px));
   background: var(--box-light);
   gap: 1.5em;
   padding: 3em 4em;

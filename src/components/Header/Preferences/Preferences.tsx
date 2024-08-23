@@ -3,14 +3,21 @@ import { useLanguageStore } from '@/context/language-store';
 import { useThemeStore } from '@/context/theme-store';
 import { MdSunny } from 'react-icons/md';
 import { FaMoon } from 'react-icons/fa';
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import english_icon from '@/assets/images/english-icon.png';
 import spanish_icon from '@/assets/images/spanish-icon.png';
 import Image from 'next/image';
+import { AnimatePresence } from 'framer-motion';
+import LoginModal from '@/components/LoginModal/LoginModal';
 
 const Settings = () => {
-  const { toggleLanguage, language } = useLanguageStore();
   const { toggleTheme, theme } = useThemeStore();
+  const { toggleLanguage, language } = useLanguageStore();
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const modalViewController = () => {
+    setIsOpen(!isOpen);
+  };
 
   const themeOptions = useRef<HTMLDivElement | null>(null);
   const openThemeOptions = () => {
@@ -26,10 +33,14 @@ const Settings = () => {
       className={
         theme === 'dark' ? styles.settings_menu_dark : styles.settings_menu
       }>
-      <div className={styles.acces_btns_container}>
-        <button className={styles.login_btn}>Login</button>
-        <button className={styles.signup_btn}>Sign up</button>
-      </div>
+      <AnimatePresence>
+        {isOpen && <LoginModal modalViewController={modalViewController} />}
+      </AnimatePresence>
+      <button
+        onClick={modalViewController}
+        className={styles.login_btn}>
+        {language === 'english' ? 'Login' : 'Inicia sesión'}
+      </button>
       <div
         className={styles.theme_btns_container}
         onClick={openThemeOptions}>
