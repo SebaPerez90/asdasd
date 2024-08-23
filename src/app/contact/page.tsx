@@ -1,10 +1,10 @@
-import ContactForm from '@/components/Forms/Contact/Contact';
-const Contact = () => {
-  return (
-    <div>
-      <ContactForm />
-    </div>
-  );
-};
+// import ContactForm from '@/components/Forms/Contact/Contact';
+// const Contact = () => {
+//   return (
+//     <div>
+//       <ContactForm />
+//     </div>
+//   );
+// };
 
-export default Contact;
+// export default Contact;

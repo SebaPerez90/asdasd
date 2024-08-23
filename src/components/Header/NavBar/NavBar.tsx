@@ -25,7 +25,7 @@ const navLinks = [
     label: 'navlink-jobs',
   },
   {
-    path: '/contact',
+    path: '/auth',
     name_en: 'Contact',
     name_es: 'Contacto',
     label: 'navlink-contact',
