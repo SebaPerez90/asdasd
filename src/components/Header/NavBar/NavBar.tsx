@@ -40,17 +40,20 @@ const NavBar = () => {
 
   useEffect(() => {
     if (pathname === '/auth') {
-      const nav_bar: HTMLElement | null = document.getElementById('nav-bar');
+      const nav_bar = document.getElementById('header_fixed');
       nav_bar!.style.display = 'none';
+    } else {
+      const nav_bar = document.getElementById('header_fixed');
+      nav_bar!.style.display = 'flex';
     }
   }, [pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
-      const nav_bar: HTMLElement | null = document.getElementById('nav-bar');
+      const nav_bar = document.getElementById('header_fixed');
       window.scrollY !== 0
-        ? nav_bar?.classList.add(styles.navbar_fixed)
-        : nav_bar?.classList.remove(styles.navbar_fixed);
+        ? nav_bar?.classList.add(styles.header_fixed)
+        : nav_bar?.classList.remove(styles.header_fixed);
     };
 
     handleScroll();
@@ -67,24 +70,19 @@ const NavBar = () => {
 
   return (
     <header
-      id='nav-bar'
+      id='header_fixed'
       className={
         theme === 'dark'
           ? styles.header_container_dark
           : styles.header_container
-      }
-      style={
-        theme === 'dark'
-          ? { backgroundColor: '#1b1b1f85' }
-          : { backgroundColor: '#ffffff89' }
       }>
       <div
         className={styles.logo_container}
         onClick={() => router.push('/')}>
         <Image
           priority
-          width={45}
-          height={45}
+          width={40}
+          height={40}
           src={icon_app}
           alt='icon-app'
         />

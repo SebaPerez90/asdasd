@@ -31,13 +31,28 @@ export default function SignIn() {
             marginBottom: '1rem',
           }}>
           <button
+            onClick={() => signIn('github')}
+            style={buttonStyle}>
+            GitHub
+          </button>
+          <button
+            onClick={() => signIn('gitlab')}
+            style={buttonStyle}>
+            GitLab
+          </button>
+          <button
+            onClick={() => signIn('bitbucket')}
+            style={buttonStyle}>
+            Bitbucket
+          </button>
+          <button
             onClick={() => signIn('google')}
             style={buttonStyle}>
             Google
           </button>
         </div>
         <p style={{ color: '#ccc', textAlign: 'center', margin: '1rem 0' }}>
-          orrrrr
+          or
         </p>
         <form>
           <div style={{ marginBottom: '1rem' }}>

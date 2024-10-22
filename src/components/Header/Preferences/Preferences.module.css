@@ -1,11 +1,11 @@
 /* Light Theme */
 
 .settings_menu {
-  position: absolute;
-  right: 3em;
+  /* position: absolute;
+  right: 3em; */
   display: flex;
   align-items: center;
-  gap: 1.5em;
+  gap: 1em;
   z-index: 100;
 }
 

@@ -3,7 +3,7 @@ import { useLanguageStore } from '@/context/language-store';
 import { useThemeStore } from '@/context/theme-store';
 import { MdSunny } from 'react-icons/md';
 import { FaMoon } from 'react-icons/fa';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import english_icon from '@/assets/images/english-icon.png';
 import spanish_icon from '@/assets/images/spanish-icon.png';
 import Image from 'next/image';
@@ -16,6 +16,12 @@ const Settings = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const modalViewController = () => {
+    if (isOpen === false) {
+      document.documentElement.style.overflow = 'hidden';
+    } else {
+      document.documentElement.style.overflow = 'visible';
+    }
+
     setIsOpen(!isOpen);
   };
 

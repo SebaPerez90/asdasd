@@ -17,8 +17,16 @@ const Landing = () => {
         <div className={styles.landing_text_container}>
           <h1 className={styles.title}>
             {language === 'english'
-              ? 'Find Trustworthy Professionals Easily and Securely'
-              : '¡Encuentra Profesionales Confiables de Manera Fácil y Segura'}
+              ? 'Find Trustworthy Professionals'
+              : '¡Encuentra Profesionales'}
+            <br></br>
+            {language === 'english' ? '' : 'de Manera'}
+            <br></br>
+            <strong>
+              {language === 'english'
+                ? 'Easily y Securely!'
+                : 'Fácil y Segura!'}
+            </strong>
           </h1>
 
           <p className={styles.paragraph}>
